@@ -1,0 +1,51 @@
+.section-home {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+
+	&__about {
+		.salutation {
+			letter-spacing: -1px;
+			font-size: 30px;
+			font-weight: 300;
+			margin: 0;
+
+			span {
+				display: inline-block;
+				animation-name: salutation;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes salutation {
+				0%,
+				16%,
+				32% {
+					transform: rotate(0deg);
+				}
+				8%,
+				24% {
+					transform: rotate(10deg);
+				}
+			}
+		}
+
+		h1 {
+			letter-spacing: -1px;
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		.position-company {
+			font-size: 30px;
+			font-weight: 300;
+			letter-spacing: -1px;
+		}
+	}
+
+	&__menu {
+		li {
+			display: inline-block;
+		}
+	}
+}

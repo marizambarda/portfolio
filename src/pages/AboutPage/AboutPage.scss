@@ -1,0 +1,23 @@
+.section-about {
+	min-height: 80vh;
+
+	.about-content p,
+	.about-content li {
+		color: #000;
+	}
+
+	.about-content h2 {
+		span {
+			display: inline-block;
+		}
+	}
+
+	.about-content h3 {
+		font-size: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.technologies {
+		margin-top: 20px;
+	}
+}

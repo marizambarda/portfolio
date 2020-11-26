@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;@600;800&display=swap');
+
+html,
+body,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	background-color: #dfc7f496; //#f4cef8
+	color: #7a0088;
+	font-family: 'Open Sans', sans-serif;
+}
+.section-content {
+	a {
+		color: #7a0088;
+		display: inline-block;
+
+		&:hover {
+			color: #8a2f94;
+		}
+	}
+}
+
+.about-content h2,
+.projects-content h2,
+.contact-content h2 {
+	span {
+		border-bottom: 2px solid #9f69a5;
+		padding-bottom: 8px;
+		margin-bottom: 10px;
+		font-weight: 300;
+	}
+}
+
+.btn {
+	padding: 5px 25px;
+}
+
+.btn-lg {
+	padding: 8px 25px;
+}
+
+.btn-outline-primary {
+	text-decoration: none;
+	background: transparent;
+	border-radius: 3px;
+	margin-right: 20px;
+	margin-top: 10px;
+
+	&,
+	&:hover,
+	&:focus {
+		background: transparent;
+		border-color: #7a0088 !important;
+	}
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.4);
+		border-color: #a100b6 !important;
+	}
+
+	&:focus,
+	&:active {
+		box-shadow: 0 0 0 0.2rem rgba(122, 0, 136, 0.25) !important;
+	}
+
+	&:active {
+		background: rgba(0, 0, 0, 0.1) !important;
+		color: #7a0088 !important;
+	}
+}
