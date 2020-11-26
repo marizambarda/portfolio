@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { MENU_OFFSET, EMAIL_URL, LINKEDIN_URL, GITHUB_URL } from '../../constants';
 import './Menu.scss';
 
 function Menu() {
@@ -29,30 +31,30 @@ function MenuDesktop() {
 		<div className={classNames('menu-desktop', { hidden: hidden })}>
 			<Container>
 				<div className="menu-desktop-inner">
-					<div>
+					<AnchorLink offset={MENU_OFFSET} href="#home">
 						<h1>Mariana Zambarda</h1>
-					</div>
+					</AnchorLink>
 					<div className="menu-links">
 						<ul>
-							<a href="#">
+							<AnchorLink offset={MENU_OFFSET} href="#about">
 								<li>Sobre</li>
-							</a>
-							<a href="#">
+							</AnchorLink>
+							<AnchorLink offset={MENU_OFFSET} href="#projects">
 								<li>Projetos</li>
-							</a>
-							<a href="#">
+							</AnchorLink>
+							<AnchorLink offset={MENU_OFFSET} href="#contact">
 								<li>Contato</li>
-							</a>
+							</AnchorLink>
 						</ul>
 					</div>
 					<div className="social-media">
-						<a>
+						<a href={EMAIL_URL} target="blank">
 							<FontAwesomeIcon icon={faEnvelopeOpenText} className="icon" />
 						</a>
-						<a>
+						<a href={LINKEDIN_URL} target="blank">
 							<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
 						</a>
-						<a>
+						<a href={GITHUB_URL} target="blank">
 							<FontAwesomeIcon icon={faGithub} className="icon" />
 						</a>
 					</div>

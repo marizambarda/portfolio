@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { MENU_OFFSET } from '../../constants';
 import './HomePage.scss';
 
 function HomePage() {
 	return (
-		<div className="section-home">
+		<div className="section-home" id="home">
 			<Container className="section-home__about">
 				<Row>
 					<Col md={{ span: 6, offset: 1 }}>
@@ -16,17 +18,32 @@ function HomePage() {
 						<div className="section-home__menu">
 							<ul>
 								<li>
-									<Button href="#" variant="outline-primary">
+									<Button
+										as={AnchorLink}
+										href="#about"
+										offset={MENU_OFFSET}
+										variant="outline-primary"
+									>
 										Sobre mim
 									</Button>
 								</li>
 								<li>
-									<Button href="#" variant="outline-primary">
+									<Button
+										as={AnchorLink}
+										href="#projects"
+										offset={MENU_OFFSET}
+										variant="outline-primary"
+									>
 										Projetos
 									</Button>
 								</li>
 								<li>
-									<Button href="#" variant="outline-primary">
+									<Button
+										as={AnchorLink}
+										href="#contact"
+										offset={MENU_OFFSET}
+										variant="outline-primary"
+									>
 										Contato
 									</Button>
 								</li>

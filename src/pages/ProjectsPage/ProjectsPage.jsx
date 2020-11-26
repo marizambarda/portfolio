@@ -5,7 +5,7 @@ import './ProjectsPage.scss';
 
 function ProjectsPage() {
 	return (
-		<div className="section-projects">
+		<div className="section-projects" id="projects">
 			<Container>
 				<div className="projects-content">
 					<Row>

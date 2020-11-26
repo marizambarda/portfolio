@@ -3,11 +3,12 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { EMAIL_URL, LINKEDIN_URL, GITHUB_URL } from '../../constants';
 import './ContactPage.scss';
 
 function ContactPage() {
 	return (
-		<div className="sections-contact">
+		<div className="sections-contact" id="contact">
 			<Container>
 				<Row>
 					<Col md={{ span: 10, offset: 1 }}>
@@ -23,19 +24,37 @@ function ContactPage() {
 							<Col md={{ span: 6, offset: 3 }}>
 								<ul className="social-media">
 									<li>
-										<Button href="#" variant="outline-primary" size="lg" block>
+										<Button
+											href={EMAIL_URL}
+											target="blank"
+											variant="outline-primary"
+											size="lg"
+											block
+										>
 											<FontAwesomeIcon icon={faEnvelopeOpenText} className="icon" />
 											<span>Email</span>
 										</Button>
 									</li>
 									<li>
-										<Button href="#" variant="outline-primary linkedin" size="lg" block>
+										<Button
+											href={LINKEDIN_URL}
+											target="blank"
+											variant="outline-primary linkedin"
+											size="lg"
+											block
+										>
 											<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
 											<span>LinkedIn</span>
 										</Button>
 									</li>
 									<li>
-										<Button href="#" variant="outline-primary github" size="lg" block>
+										<Button
+											href={GITHUB_URL}
+											target="blank"
+											variant="outline-primary github"
+											size="lg"
+											block
+										>
 											<FontAwesomeIcon icon={faGithub} className="icon" />
 											<span>GitHub</span>
 										</Button>
