@@ -8,21 +8,22 @@ ul {
 	list-style: none;
 }
 body {
-	background-color: #dfc7f496; //#f4cef8
+	background-color: #e8dcf2; //#f4cef8
 	color: #7a0088;
 	font-family: 'Open Sans', sans-serif;
 }
 .section-content {
 	a {
 		color: #7a0088;
-		display: inline-block;
 
 		&:hover {
 			color: #8a2f94;
 		}
 	}
 }
-
+.page-section {
+	margin-bottom: 50px;
+}
 .about-content h2,
 .projects-content h2,
 .contact-content h2 {
@@ -46,7 +47,6 @@ body {
 	text-decoration: none;
 	background: transparent;
 	border-radius: 3px;
-	margin-right: 20px;
 	margin-top: 10px;
 
 	&,
@@ -70,4 +70,7 @@ body {
 		background: rgba(0, 0, 0, 0.1) !important;
 		color: #7a0088 !important;
 	}
+}
+h2 {
+	color: #7a0088;
 }

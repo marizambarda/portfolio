@@ -5,7 +5,7 @@ import './ProjectsPage.scss';
 
 function ProjectsPage() {
 	return (
-		<div className="section-projects" id="projects">
+		<div className="section-projects page-section" id="projects">
 			<Container>
 				<div className="projects-content">
 					<Row>
@@ -17,9 +17,9 @@ function ProjectsPage() {
 								title="Tênis Clube Santa Cruz"
 								technologies={['WORDPRESS', 'HTML', 'CSS']}
 								description="m Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-						type and scrambled it to make a type specimen book. It has survived not only five centuries.
-						when an unknown printer took a galley of type and scrambled it to make."
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+								type and scrambled it to make a type specimen book. It has survived not only five centuries.
+								when an unknown printer took a galley of type and scrambled it to make."
 								url="#"
 								image={tenisClubeImage}
 							/>
@@ -33,7 +33,7 @@ function ProjectsPage() {
 
 function Project({ image, title, technologies, description, url, alternate }) {
 	const imageColumn = (
-		<Col md={4}>
+		<Col md={5}>
 			<Image className="project-image" src={image} />
 		</Col>
 	);

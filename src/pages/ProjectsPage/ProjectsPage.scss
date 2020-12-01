@@ -8,23 +8,33 @@
 	}
 
 	.project-image {
-		width: 290px;
-	}
-	.projects-content h3 {
-		font-size: 25px;
-		font-weight: bold;
-		margin-bottom: 3px;
-	}
-	.projects-content p {
-		font-weight: 400;
-		padding-top: 8px;
-		margin-bottom: 0px;
+		width: 100%;
+		margin-bottom: 20px;
 	}
 
-	.projects-content h3,
-	.projects-content p {
+	.projects-content {
 		color: #000;
+
+		.buttons a {
+			display: block;
+
+			@media (min-width: 576px) {
+				display: inline-block;
+			}
+		}
+
+		h3 {
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 3px;
+		}
+		p {
+			font-weight: 400;
+			padding-top: 8px;
+			margin-bottom: 0px;
+		}
 	}
+
 	.badge-technologies {
 		font-weight: 600;
 		text-align: center;

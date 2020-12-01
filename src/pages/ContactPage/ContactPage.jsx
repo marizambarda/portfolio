@@ -8,7 +8,7 @@ import './ContactPage.scss';
 
 function ContactPage() {
 	return (
-		<div className="sections-contact" id="contact">
+		<div className="sections-contact page-section" id="contact">
 			<Container>
 				<Row>
 					<Col md={{ span: 10, offset: 1 }}>
@@ -26,7 +26,7 @@ function ContactPage() {
 									<li>
 										<Button
 											href={EMAIL_URL}
-											target="blank"
+											target="_blank"
 											variant="outline-primary"
 											size="lg"
 											block
@@ -38,7 +38,7 @@ function ContactPage() {
 									<li>
 										<Button
 											href={LINKEDIN_URL}
-											target="blank"
+											target="_blank"
 											variant="outline-primary linkedin"
 											size="lg"
 											block
@@ -50,7 +50,7 @@ function ContactPage() {
 									<li>
 										<Button
 											href={GITHUB_URL}
-											target="blank"
+											target="_blank"
 											variant="outline-primary github"
 											size="lg"
 											block

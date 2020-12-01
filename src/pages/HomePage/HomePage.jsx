@@ -6,10 +6,10 @@ import './HomePage.scss';
 
 function HomePage() {
 	return (
-		<div className="section-home" id="home">
+		<div className="section-home page-section" id="home">
 			<Container className="section-home__about">
 				<Row>
-					<Col md={{ span: 6, offset: 1 }}>
+					<Col lg={{ span: 6, offset: 1 }}>
 						<p className="salutation">
 							Olá! <span>👋</span> Meu nome é
 						</p>
