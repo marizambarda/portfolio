@@ -1,6 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import tenisClubeImage from '../../images/tenis-clube.png';
+import santaVeiculos from '../../images/santa-veiculos.png';
+import numaLaudos from '../../images/numa-laudos.png';
+import pcVeiculos from '../../images/pc-veiculos.png';
+import projetoTwitter from '../../images/projeto-twitter.png';
+import jogoDaVelha from '../../images/jogo-da-velha.png';
+
 import './ProjectsPage.scss';
 
 function ProjectsPage() {
@@ -13,15 +19,58 @@ function ProjectsPage() {
 							<h2>
 								<span>Projetos</span>
 							</h2>
+
+							<Project
+								title="Clone Twitter"
+								technologies={['React.js', 'Bootstrap', 'Sass', 'node.js', 'MySQL']}
+								description="Clone do Twitter, desenvolvido para aprimorar conhecimentos em Frontend e Backend.
+								Possui funcionalidades de upload de imagens, recuperação de senha, validação de nome e email de usuários, seguir usuários, timeline, menções, hashtags e horário de publicação. No frontend foi utilizada a biblioteca React.js, o framework Bootstrap, HTML e Sass.
+								No backend, node.js e MySQL."
+								url="https://www.numalaudos.com.br/"
+								image={projetoTwitter}
+								gitHubURL="https://github.com/marizambarda/twitterClone"
+							/>
+
+							<Project
+								title="Santa Veículos"
+								technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
+								description="Web site desenvolvido para revenda de veículos de Santa Cruz do Sul. Como freelancer, trabalhei com a GHS Web no desenvolvimento do layout responsivo utilizando HTML, CSS e JavaScript."
+								url="https://www.santaveiculos.com.br/"
+								image={santaVeiculos}
+							/>
+
 							<Project
 								title="Tênis Clube Santa Cruz"
-								technologies={['WORDPRESS', 'HTML', 'CSS']}
-								description="m Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-								type and scrambled it to make a type specimen book. It has survived not only five centuries.
-								when an unknown printer took a galley of type and scrambled it to make."
-								url="#"
+								technologies={['WordPress', 'HTML', 'CSS']}
+								description="Portal desenvolvido com Wordpress para clube de Santa Cruz do Sul, auxiliei no desenvolvimento do tema personalizado utilizando Bootstrap e jQuery, e também no desenvolvimento de tipos de páginas e tipos de posts customizados."
+								url="http://www.tenisclubesantacruz.com/"
 								image={tenisClubeImage}
+							/>
+
+							<Project
+								title="PC Veículos"
+								technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
+								description="Web site desenvolvido para uma revenda de veículos de Santa Cruz do Sul em parceria com a GHS Web. Nesse projeto foram aplicados conhecimentos em HTML, CSS e JavaScript, além de conexão com o banco de dados utilizando PHP e MySQL."
+								url="http://www.pcveiculosrs.com.br/"
+								image={pcVeiculos}
+							/>
+
+							<Project
+								title="NUMA Laudos"
+								technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
+								description="Web site desenvolvido em parceria com a GHS Web. Trabalhei no frontend aplicando conhecimentos em HTML, CSS e JavaScript, com layout responsivo."
+								url="https://www.numalaudos.com.br/"
+								image={numaLaudos}
+							/>
+
+							<Project
+								title="Jogo da Velha"
+								technologies={['React.js', 'HTML', 'Sass']}
+								description="Jogo da velha, desenvolvido em React.js, HTML e Sass, para aprimorar conhecimentos em lógica, grid e responsivo. Foi utilizado o framework Bootstrap. Possui verificação de ganhador, e somatória de pontos e empates.
+								"
+								url="https://jogo-da-velha-mari.vercel.app/"
+								image={jogoDaVelha}
+								gitHubURL="https://github.com/marizambarda/jogo-da-velha"
 							/>
 						</Col>
 					</Row>
@@ -31,15 +80,15 @@ function ProjectsPage() {
 	);
 }
 
-function Project({ image, title, technologies, description, url, alternate }) {
+function Project({ image, title, technologies, description, url, gitHubURL }) {
 	const imageColumn = (
-		<Col md={5}>
+		<Col lg={5}>
 			<Image className="project-image" src={image} />
 		</Col>
 	);
 
 	const contentColumn = (
-		<Col md={7}>
+		<Col lg={7}>
 			<div>
 				<h3>{title}</h3>
 				<div>
@@ -52,28 +101,24 @@ function Project({ image, title, technologies, description, url, alternate }) {
 				<p>{description}</p>
 			</div>
 			<div className="buttons">
-				<Button href={url} variant="outline-primary">
+				<Button href={url} variant="outline-primary" target="_blank">
 					Ver Site
-				</Button>
+				</Button>{' '}
+				{gitHubURL && (
+					<Button href={gitHubURL} variant="outline-primary" target="_blank">
+						Ver no GitHub
+					</Button>
+				)}
 			</div>
 		</Col>
 	);
 
-	if (alternate) {
-		return (
-			<Row>
-				{contentColumn}
-				{imageColumn}
-			</Row>
-		);
-	} else {
-		return (
-			<Row>
-				{imageColumn}
-				{contentColumn}
-			</Row>
-		);
-	}
+	return (
+		<Row>
+			{imageColumn}
+			{contentColumn}
+		</Row>
+	);
 }
 
 export default ProjectsPage;

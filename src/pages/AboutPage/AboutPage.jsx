@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './AboutPage.scss';
 
 function AboutPage() {
@@ -13,18 +14,19 @@ function AboutPage() {
 								<span>Sobre</span>
 							</h2>
 							<p>
-								Tenho 22 anos, ou desenvolvedora front-end junior, atualmente cursando Análise e
-								Desenvolvimento de Sistemas na Estácio.
+								Tenho 22 anos, sou desenvolvedora front-end junior, atualmente cursando Análise e
+								Desenvolvimento de Sistemas na Universidade Estácio de Sá.
 							</p>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam diam imperdiet
-								odio dignissim pretium. Phasellus vulputate, purus rhoncus rhoncus euismod, enim lectus
-								egestas lorem, in varius nisi turpis quis augue.
+								Estou a procura de uma oportunidade como desenvolvedora junior para por meus
+								conhecimentos em prática. Possuo nível de inglês intermediário para avançado. Atualmente
+								moro em Santa Cruz do Sul-RS, porém pretendo mudar para Florianópolis-SC caso surja
+								alguma oportunidade bacana na área de desenvolvimento.
 							</p>
 							<p>
-								Suspendisse aliquet diam id sollicitudin luctus. Curabitur ornare sagittis quam vitae
-								porttitor. Duis vel congue odio. Nunc pretium vehicula congue. Quisque dictum id nisi ut
-								varius. Cras eu iaculis velit. Donec et tincidunt purus.
+								Sou uma pessoa que está disposta a aprender novas tecnologias e aceita desafios. Caso
+								tenha interesse ou alguma vaga que acredite que meu perfil encaixa-se não deixe de{' '}
+								<AnchorLink href="#contact">entrar em contato comigo</AnchorLink>!
 							</p>
 						</Col>
 						<Col md={{ span: 3, offset: 1 }} className="technologies">

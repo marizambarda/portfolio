@@ -106,8 +106,16 @@
 	}
 }
 
+.mobile-menu-header {
+	&.hidden {
+		transform: translateY(-60px);
+		//opacity: 0;
+	}
+}
+
 .mobile-menu-header__background {
 	background: linear-gradient(0deg, rgba(232, 220, 242, 0) 0%, rgba(244, 206, 248, 1) 70%);
+	transition: transform 0.15s linear, opacity 0.15s linear;
 	height: 90px;
 	width: 100%;
 	position: fixed;

@@ -18,19 +18,7 @@ function Menu() {
 }
 
 function MenuDesktop() {
-	const [hidden, setHidden] = useState(true);
-
-	useEffect(() => {
-		function onScroll() {
-			if (window.scrollY < window.innerHeight / 1.5) {
-				setHidden(true);
-			} else {
-				setHidden(false);
-			}
-		}
-		document.addEventListener('scroll', onScroll);
-		onScroll();
-	}, []);
+	const hidden = useHiddenScroll();
 
 	return (
 		<div className={classNames('menu-desktop', { hidden: hidden })}>
@@ -76,6 +64,7 @@ function MenuDesktop() {
 }
 
 function MobileMenu() {
+	const hidden = useHiddenScroll();
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	async function toggleMenu(e) {
@@ -84,7 +73,7 @@ function MobileMenu() {
 	}
 
 	return (
-		<div className="mobile-menu-header">
+		<div className={classNames('mobile-menu-header', { hidden: hidden && !menuOpen })}>
 			<div className="mobile-menu-header__background"></div>
 			<a href="#" onClick={toggleMenu} className={menuOpen ? 'mobile-menu-icon open' : 'mobile-menu-icon'}>
 				<div>
@@ -111,22 +100,40 @@ function MobileMenu() {
 								Contato
 							</AnchorLink>
 						</li>
-						<div className="social-media">
-							<a href={EMAIL_URL} target="_blank">
-								<FontAwesomeIcon icon={faEnvelopeOpenText} className="icon" />
-							</a>
-							<a href={LINKEDIN_URL} target="_blank">
-								<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
-							</a>
-							<a href={GITHUB_URL} target="_blank">
-								<FontAwesomeIcon icon={faGithub} className="icon" />
-							</a>
-						</div>
 					</ul>
+					<div className="social-media">
+						<a href={EMAIL_URL} target="_blank">
+							<FontAwesomeIcon icon={faEnvelopeOpenText} className="icon" />
+						</a>
+						<a href={LINKEDIN_URL} target="_blank">
+							<FontAwesomeIcon icon={faLinkedinIn} className="icon" />
+						</a>
+						<a href={GITHUB_URL} target="_blank">
+							<FontAwesomeIcon icon={faGithub} className="icon" />
+						</a>
+					</div>
 				</div>
 			)}
 		</div>
 	);
+}
+
+function useHiddenScroll() {
+	const [hidden, setHidden] = useState(true);
+
+	useEffect(() => {
+		function onScroll() {
+			if (window.scrollY < window.innerHeight / 1.5) {
+				setHidden(true);
+			} else {
+				setHidden(false);
+			}
+		}
+		document.addEventListener('scroll', onScroll);
+		onScroll();
+	}, []);
+
+	return hidden;
 }
 
 export default Menu;
