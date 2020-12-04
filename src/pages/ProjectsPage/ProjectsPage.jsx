@@ -4,7 +4,7 @@ import tenisClubeImage from '../../images/tenis-clube.png';
 import santaVeiculos from '../../images/santa-veiculos.png';
 import numaLaudos from '../../images/numa-laudos.png';
 import pcVeiculos from '../../images/pc-veiculos.png';
-import projetoTwitter from '../../images/projeto-twitter.png';
+import dragoniter from '../../images/dragoniter.png';
 import jogoDaVelha from '../../images/jogo-da-velha.png';
 
 import './ProjectsPage.scss';
@@ -19,19 +19,16 @@ function ProjectsPage() {
 							<h2>
 								<span>Projetos</span>
 							</h2>
-							{/*
-							/*<Project 
-								title="Clone Twitter"
+							<Project
+								title="Dragoniter (Clone do Twitter)"
 								technologies={['React.js', 'Bootstrap', 'Sass', 'node.js', 'MySQL']}
 								description="Clone do Twitter, desenvolvido para aprimorar conhecimentos em Frontend e Backend.
 								Possui funcionalidades de upload de imagens, recuperação de senha, validação de nome e email de usuários, seguir usuários, timeline, menções, hashtags e horário de publicação. No frontend foi utilizada a biblioteca React.js, o framework Bootstrap, HTML e Sass.
 								No backend, node.js e MySQL."
-								url="#"
-								image={projetoTwitter}
-								gitHubURL="https://github.com/marizambarda/twitterClone"
-								
+								url="http://dragoniter.marianazambarda.com"
+								image={dragoniter}
+								gitHubURL="https://github.com/marizambarda/dragoniter"
 							/>
-							*/}
 
 							<Project
 								title="Santa Veículos"
@@ -70,7 +67,7 @@ function ProjectsPage() {
 								technologies={['React.js', 'HTML', 'Sass']}
 								description="Jogo da velha, desenvolvido em React.js, HTML e Sass, para aprimorar conhecimentos em lógica, grid e responsivo. Foi utilizado o framework Bootstrap. Possui verificação de ganhador, e somatória de pontos e empates.
 								"
-								url="https://jogo-da-velha-mari.vercel.app/"
+								url="https://jogodavelha.marianazambarda.com/"
 								image={jogoDaVelha}
 								gitHubURL="https://github.com/marizambarda/jogo-da-velha"
 							/>
