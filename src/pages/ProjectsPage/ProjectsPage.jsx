@@ -19,17 +19,19 @@ function ProjectsPage() {
 							<h2>
 								<span>Projetos</span>
 							</h2>
-
-							<Project
+							{/*
+							/*<Project 
 								title="Clone Twitter"
 								technologies={['React.js', 'Bootstrap', 'Sass', 'node.js', 'MySQL']}
 								description="Clone do Twitter, desenvolvido para aprimorar conhecimentos em Frontend e Backend.
 								Possui funcionalidades de upload de imagens, recuperação de senha, validação de nome e email de usuários, seguir usuários, timeline, menções, hashtags e horário de publicação. No frontend foi utilizada a biblioteca React.js, o framework Bootstrap, HTML e Sass.
 								No backend, node.js e MySQL."
-								url="https://www.numalaudos.com.br/"
+								url="#"
 								image={projetoTwitter}
 								gitHubURL="https://github.com/marizambarda/twitterClone"
+								
 							/>
+							*/}
 
 							<Project
 								title="Santa Veículos"
