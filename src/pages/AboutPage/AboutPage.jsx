@@ -14,11 +14,11 @@ function AboutPage() {
 								<span>Sobre</span>
 							</h2>
 							<p>
-								Tenho 22 anos, sou desenvolvedora front-end junior, atualmente cursando Análise e
+								Tenho 22 anos, sou desenvolvedora front-end júnior, atualmente cursando Análise e
 								Desenvolvimento de Sistemas na Universidade Estácio de Sá.
 							</p>
 							<p>
-								Estou a procura de uma oportunidade como desenvolvedora junior para por meus
+								Estou a procura de uma oportunidade como desenvolvedora júnior para por meus
 								conhecimentos em prática. Possuo nível de inglês intermediário para avançado. Atualmente
 								moro em Santa Cruz do Sul-RS, porém pretendo mudar para Florianópolis-SC caso surja
 								alguma oportunidade bacana na área de desenvolvimento.
