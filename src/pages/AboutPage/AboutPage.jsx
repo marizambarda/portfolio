@@ -9,27 +9,24 @@ function AboutPage() {
 			<Container>
 				<div className="about-content">
 					<Row>
-						<Col md={{ span: 6, offset: 1 }}>
+						<Col md={{ span: 5, offset: 1 }}>
 							<h2>
 								<span>Sobre</span>
 							</h2>
 							<p>
-								Tenho 22 anos, sou desenvolvedora front-end júnior, atualmente cursando Análise e
-								Desenvolvimento de Sistemas na Universidade Estácio de Sá.
+								Tenho 22 anos, sou desenvolvedora front-end júnior, atualmente trabalhando na{' '}
+								<a href="https://www.suitable.com.br/">Suitable</a> e cursando Análise e Desenvolvimento
+								de Sistemas na Universidade Estácio de Sá.
 							</p>
 							<p>
-								Estou a procura de uma oportunidade como desenvolvedora júnior para por meus
-								conhecimentos em prática. Possuo nível de inglês intermediário para avançado. Atualmente
-								moro em Santa Cruz do Sul-RS, porém pretendo mudar para Florianópolis-SC caso surja
-								alguma oportunidade bacana na área de desenvolvimento.
-							</p>
-							<p>
-								Sou uma pessoa que está disposta a aprender novas tecnologias e aceita desafios. Caso
-								tenha interesse ou alguma vaga que acredite que meu perfil encaixa-se não deixe de{' '}
-								<AnchorLink href="#contact">entrar em contato comigo</AnchorLink>!
+								No momento, não estou a procura de um novo emprego, porém, trabalho com desenvolvimento
+								de sites freelance nas minhas horas vagas. Caso tenha interesse em conhecer meus
+								trabalhos ou trocar alguma ideia, não deixe de{' '}
+								<AnchorLink href="#contact">entrar em contato comigo</AnchorLink> ou conhecer mais sobre
+								os meus <AnchorLink href="#projects">projetos</AnchorLink>!
 							</p>
 						</Col>
-						<Col md={{ span: 3, offset: 1 }} className="technologies">
+						<Col md={{ span: 2, offset: 1 }} className="technologies">
 							<h3>Tecnologias</h3>
 							<ul>
 								<li>› HTML</li>
@@ -40,6 +37,15 @@ function AboutPage() {
 								<li>› jQuery</li>
 								<li>› Git </li>
 								<li>› Responsivo</li>
+							</ul>
+						</Col>
+					</Row>
+					<Row>
+						<Col md={{ span: 3, offset: 7 }} className="technologies">
+							<h3>Idiomas</h3>
+							<ul>
+								<li>› Português - Fluente</li>
+								<li>› Inglês - Intermediário</li>
 							</ul>
 						</Col>
 					</Row>
