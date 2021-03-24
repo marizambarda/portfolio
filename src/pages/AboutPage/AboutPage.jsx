@@ -15,13 +15,17 @@ function AboutPage() {
 							</h2>
 							<p>
 								Tenho 22 anos, sou desenvolvedora front-end júnior, atualmente trabalhando na{' '}
-								<a href="https://www.suitable.com.br/">Suitable</a> e cursando Análise e Desenvolvimento
-								de Sistemas na Universidade Estácio de Sá.
+								<a href="https://www.suitable.com.br/">
+									Suitable (sistema de gerenciamento de restaurante e aplicativo de delivery)
+								</a>{' '}
+								e desenvolvendo de sites freelancer no meu tempo livre. Curso Análise e Desenvolvimento
+								de Sistemas na Universidade Estácio de Sá e possuo inglês intermediário
 							</p>
 							<p>
-								No momento, não estou a procura de um novo emprego, porém, trabalho com desenvolvimento
-								de sites freelance nas minhas horas vagas. Caso tenha interesse em conhecer meus
-								trabalhos ou trocar alguma ideia, não deixe de{' '}
+								Sou uma pessoa disposta a aprender novas tecnologias e procuro sempre aprimorar meus
+								conhecimentos. Hoje na Suitable trabalho com o desenvolvendo de novas funcionalidades
+								dentro do sistema utilizando React. Caso tenha interesse em conhecer meus trabalhos ou
+								trocar alguma ideia, não deixe de{' '}
 								<AnchorLink href="#contact">entrar em contato comigo</AnchorLink> ou conhecer mais sobre
 								os meus <AnchorLink href="#projects">projetos</AnchorLink>!
 							</p>
@@ -32,6 +36,7 @@ function AboutPage() {
 								<li>› HTML</li>
 								<li>› CSS</li>
 								<li>› Bootstrap</li>
+								<li>› Material-UI</li>
 								<li>› JavaScript</li>
 								<li>› React</li>
 								<li>› jQuery</li>
