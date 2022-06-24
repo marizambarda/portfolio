@@ -35,15 +35,19 @@ body {
 	}
 }
 
-.btn {
+.btn, select {
 	padding: 5px 25px;
 }
 
-.btn-lg {
+.btn-lg, select {
 	padding: 8px 25px;
 }
+select{
+	outline: none;
+	color: #7a0088;
+}
 
-.btn-outline-primary {
+.btn-outline-primary, select{
 	text-decoration: none;
 	background: transparent;
 	border-radius: 3px;
