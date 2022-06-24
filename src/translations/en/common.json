@@ -1,5 +1,7 @@
 {
-  "welcome": {
-      "title": "Welcome to {{framework}}"
+  "home": {
+      "buttons": {
+        "language": "Language"
+      } 
   }
 }

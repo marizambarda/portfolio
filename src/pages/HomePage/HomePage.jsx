@@ -52,26 +52,24 @@ function HomePage () {
                     Contato
                   </Button>
                 </li>
+
                 <li>
-                  <div>
-                    <h1>{t('welcome.title', { framework: 'React' })}</h1>
-                    <button onClick={() => i18n.changeLanguage('ptBr')}>
-                      Pt-br
-                    </button>
-                    <button onClick={() => i18n.changeLanguage('en')}>
-                      en
-                    </button>
-                  </div>
+                  <Select
+                    onChange={i18n.changeLanguage}
+                    label={t('home.buttons.language')}
+                    options={[
+                      {
+                        value: 'en',
+                        label: 'English'
+                      },
+                      {
+                        value: 'ptBr',
+                        label: 'Português'
+                      }
+                    ]}
+                  />
                 </li>
               </ul>
-
-              <Select
-                onChange={i18n.changeLanguage}
-                options={[
-                  { value: 'en', label: 'Inglex' },
-                  { value: 'ptBr', label: 'Br' }
-                ]}
-              />
             </div>
           </Col>
         </Row>
