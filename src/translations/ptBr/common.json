@@ -2,6 +2,17 @@
   "home": {
       "buttons": {
         "language": "Idioma"
-      } 
+      },
+      "iAm": "Sou desenvolvedora front-end",
+      "salutation": "Olá!",
+      "myName": "Meu nome é",
+      "aboutMe": "Sobre mim",
+      "projects": "Projetos",
+      "contact": "Contato"
+  },
+  "about": {
+    "aboutMe": "Tenho 24 anos, sou desenvolvedora front-end júnior, atualmente trabalhando na [Citifyd]. Curso Análise e Desenvolvimento de Sistemas na Universidade Estácio de Sá e possuo inglês intermediário. Sou uma pessoa disposta a aprender novas tecnologias e procuro sempre aprimorar meus conhecimentos. Hoje na Citifyd trabalho com o desenvolvendo de novas funcionalidades dentro do sistema utilizando React.",
+    "citifydProjects": "Uns dos principais  projetos que tenho trabalhado é a migração do Dashboard da Citifyd de AngularJS para React. Nesse projetos migramos todo o sistema, implementamos o Storybook com a criação de componentes reutilizáveis, além da criação testes unitários. Também trabalhei no desenvolvimento no site institucional na empresa, utilizando nextJS, css modules, typescript e storybook.",
+    "contact": "Caso tenha interesse em conhecer meus trabalhos ou trocar alguma ideia, não deixe de [entrar em contato comigo] ou conheça mais sobre os [meus projetos]!"
   }
 }

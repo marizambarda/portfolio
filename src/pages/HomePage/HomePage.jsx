@@ -16,10 +16,12 @@ function HomePage () {
         <Row>
           <Col lg={{ span: 6, offset: 1 }}>
             <p className='salutation'>
-              Olá! <span>👋</span> Meu nome é
+              {t('home.salutation')}
+              <span>👋</span>
+              {t('home.myName')}
             </p>
             <h1>Mariana Zambarda</h1>
-            <p className='position-company'>Sou desenvolvedora front-end</p>
+            <p className='position-company'>{t('home.iAm')}</p>
             <div className='section-home__menu'>
               <ul>
                 <li>
@@ -29,7 +31,7 @@ function HomePage () {
                     offset={MENU_OFFSET}
                     variant='outline-primary'
                   >
-                    Sobre mim
+                    {t('home.aboutMe')}
                   </Button>
                 </li>
                 <li>
@@ -39,7 +41,7 @@ function HomePage () {
                     offset={MENU_OFFSET}
                     variant='outline-primary'
                   >
-                    Projetos
+                    {t('home.projects')}
                   </Button>
                 </li>
                 <li>
@@ -49,7 +51,7 @@ function HomePage () {
                     offset={MENU_OFFSET}
                     variant='outline-primary'
                   >
-                    Contato
+                    {t('home.contact')}
                   </Button>
                 </li>
 

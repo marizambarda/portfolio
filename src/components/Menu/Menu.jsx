@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useTranslation } from 'react-i18next'
 import {
   MENU_OFFSET,
   EMAIL_URL,
@@ -24,6 +25,7 @@ function Menu () {
 
 function MenuDesktop () {
   const hidden = useHiddenScroll()
+  const { t } = useTranslation('common')
 
   return (
     <div className={classNames('menu-desktop', { hidden: hidden })}>
@@ -36,17 +38,17 @@ function MenuDesktop () {
             <ul>
               <li>
                 <AnchorLink offset={MENU_OFFSET} href='#about'>
-                  Sobre
+                  {t('home.aboutMe')}
                 </AnchorLink>
               </li>
               <li>
                 <AnchorLink offset={MENU_OFFSET} href='#projects'>
-                  Projetos
+                  {t('home.projects')}
                 </AnchorLink>
               </li>
               <li>
                 <AnchorLink offset={MENU_OFFSET} href='#contact'>
-                  Contato
+                  {t('home.contact')}
                 </AnchorLink>
               </li>
             </ul>
@@ -70,6 +72,7 @@ function MenuDesktop () {
 
 function MobileMenu () {
   const hidden = useHiddenScroll()
+  const { t } = useTranslation('common')
   const [menuOpen, setMenuOpen] = useState(false)
 
   async function toggleMenu (e) {
@@ -104,7 +107,7 @@ function MobileMenu () {
                 href='#about'
                 onClick={() => setMenuOpen(false)}
               >
-                Sobre
+                {t('home.aboutMe')}
               </AnchorLink>
             </li>
             <li>
@@ -113,7 +116,7 @@ function MobileMenu () {
                 href='#projects'
                 onClick={() => setMenuOpen(false)}
               >
-                Projetos
+                {t('home.projects')}
               </AnchorLink>
             </li>
             <li>
@@ -122,7 +125,7 @@ function MobileMenu () {
                 href='#contact'
                 onClick={() => setMenuOpen(false)}
               >
-                Contato
+                {t('home.contact')}
               </AnchorLink>
             </li>
           </ul>
