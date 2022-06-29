@@ -1,18 +1,26 @@
 {
-  "home": {
-      "buttons": {
-        "language": "Language"
-      },
-      "iAm": "I'm a front-end developer",
-      "salutation": "Hi!",
-      "myName": " My name is",
-      "aboutMe": "About me",
-      "projects": "Projects",
-      "contact": "Contact"
+  "home": {   
+    "iAm": "I'm a front-end developer",
+    "salutation": "Hi!",
+    "myName": " My name is",
+    "aboutMe": "About me",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "about": {
     "aboutMe": "I'm 24 years old, I'm a junior front-end developer, currently working at [Citifyd]. Course Analysis and Systems Development at [Estácio de Sá] university and I have intermediate English. I am a person willing to learn new technologies and always try to improve my knowledge. Today at [Citifyd] I work with the development of new features in the system using React.",
     "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's Dashboard from AngularJS to React. In these projects we refactored the entire system, implemented the Storybook with the creation of reusable components, in addition to the creation of unit tests. I also worked on the development of the institutional website at the company, using nextJS, css modules, typescript and storybook.",
-    "contact": "If you are interested in getting to know my works or exchange any ideas, do not hesitate to [contact me] or learn more about [my projects]!"
+    "contact": "If you are interested in getting to know my works or exchange any ideas, do not hesitate to [contact me] or learn more about [my projects]!",
+    "technologies": "Technologies",
+    "responsive": "Responsive"
+  },
+
+  "languages": {
+    "languages": "languages",
+    "language": "Language",
+    "english":   "English",
+    "portuguese": "Portuguese",
+    "fluent": "Fluent",
+    "intermediary": "Intermediary"
   }
 }

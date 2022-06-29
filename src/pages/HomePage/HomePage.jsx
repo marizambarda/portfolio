@@ -58,7 +58,7 @@ function HomePage () {
                 <li>
                   <Select
                     onChange={i18n.changeLanguage}
-                    label={t('home.buttons.language')}
+                    label={t('languages.language')}
                     options={[
                       {
                         value: 'en',

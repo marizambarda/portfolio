@@ -44,25 +44,40 @@ function AboutPage () {
               </p>
             </Col>
             <Col md={{ span: 3, offset: 1 }}>
-              <div className='technologies'>
-                <h3>Tecnologias</h3>
-                <ul>
-                  <li>› HTML</li>
-                  <li>› CSS</li>
-                  <li>› Bootstrap</li>
-                  <li>› Material-UI</li>
-                  <li>› JavaScript</li>
-                  <li>› React</li>
-                  <li>› jQuery</li>
-                  <li>› Git </li>
-                  <li>› Responsivo</li>
-                </ul>
+              <div className='information'>
+                <h3>{t('about.technologies')}</h3>
+                <Row>
+                  <Col>
+                    <ul>
+                      <li>› React</li>
+                      <li>› JavaScript</li>
+                      <li>› HTML</li>
+                      <li>› Bootstrap</li>
+                      <li>› Storybook</li>
+                      <li>› Git </li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <ul>
+                      <li>› NextJS</li>
+                      <li>› TypeScript</li>
+                      <li>› CSS</li>
+                      <li>› Material-UI</li>
+                      <li>› jQuery</li>
+                      <li>› {t('about.responsive')}</li>
+                    </ul>
+                  </Col>
+                </Row>
               </div>
-              <div className='technologies'>
-                <h3>Idiomas</h3>
+              <div className='information'>
+                <h3>{t('languages.languages')}</h3>
                 <ul>
-                  <li>› Português - Fluente</li>
-                  <li>› Inglês - Intermediário</li>
+                  <li>
+                    › {t('languages.portuguese')} - {t('languages.fluent')}
+                  </li>
+                  <li>
+                    › {t('languages.english')} - {t('languages.intermediary')}
+                  </li>
                 </ul>
               </div>
             </Col>
