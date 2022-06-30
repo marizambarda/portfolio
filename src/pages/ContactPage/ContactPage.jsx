@@ -20,7 +20,7 @@ function ContactPage () {
                 <span> {t('home.contact')}</span>
               </h2>
               <div>
-                <p>Você pode usar os canais abaixo para entrar em contato:</p>
+                <p>{t('contact')}</p>
               </div>
             </div>
             <Row>

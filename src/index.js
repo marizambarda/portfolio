@@ -6,17 +6,19 @@ import reportWebVitals from './reportWebVitals'
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next'
 
-import common_ptBr from '../src/translations/ptBr/common.json'
+import common_ptBr from '../src/translations/pt-BR/common.json'
 import common_en from '../src/translations/en/common.json'
+
+const userLang = navigator.language || navigator.userLanguage || 'en'
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: userLang,
   resources: {
     en: {
       common: common_en
     },
-    ptBr: {
+    'pt-BR': {
       common: common_ptBr
     }
   }

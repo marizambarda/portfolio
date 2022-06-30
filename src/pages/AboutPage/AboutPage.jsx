@@ -19,8 +19,7 @@ function AboutPage () {
               </h2>
               <p>
                 {replace(t('about.aboutMe'), {
-                  Citifyd: <AnchorLink href='#contact'>Citifyd</AnchorLink>,
-                  'Estácio de Sá': 'BBB'
+                  Citifyd: <AnchorLink href='#contact'>Citifyd</AnchorLink>
                 })}
               </p>
               <p>{t('about.citifydProjects')}</p>

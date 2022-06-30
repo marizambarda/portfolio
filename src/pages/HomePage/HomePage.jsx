@@ -65,7 +65,7 @@ function HomePage () {
                         label: 'English'
                       },
                       {
-                        value: 'ptBr',
+                        value: 'pt-BR',
                         label: 'Português'
                       }
                     ]}

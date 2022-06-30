@@ -20,10 +20,10 @@ function ProjectsPage () {
           <Row>
             <Col md={{ span: 10, offset: 1 }}>
               <h2>
-                <span> {t('home.projects')}</span>
+                <span>{t('home.projects')}</span>
               </h2>
               <Project
-                title='Dragoniter (Clone do Twitter)'
+                title={`Dragoniter (${t('projects.twitterClone.title')})`}
                 technologies={[
                   'React.js',
                   'Bootstrap',
@@ -31,18 +31,25 @@ function ProjectsPage () {
                   'node.js',
                   'MySQL'
                 ]}
-                description='Clone do Twitter, desenvolvido para aprimorar conhecimentos em Frontend e Backend.
-								Possui funcionalidades de upload de imagens, recuperação de senha, validação de nome e email de usuários, seguir usuários, timeline, menções, hashtags e horário de publicação. No frontend foi utilizada a biblioteca React.js, o framework Bootstrap, HTML e Sass.
-								No backend, node.js e MySQL.'
+                description={t('projects.twitterClone.description')}
                 url='http://dragoniter.marianazambarda.com'
                 image={dragoniter}
                 gitHubURL='https://github.com/marizambarda/dragoniter'
               />
 
               <Project
+                title={t('projects.jogoDaVelha.title')}
+                technologies={['React.js', 'HTML', 'Sass']}
+                description={t('projects.jogoDaVelha.description')}
+                url='https://jogodavelha.marianazambarda.com/'
+                image={jogoDaVelha}
+                gitHubURL='https://github.com/marizambarda/jogo-da-velha'
+              />
+
+              <Project
                 title='Santa Veículos'
                 technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
-                description='Web site desenvolvido para revenda de veículos de Santa Cruz do Sul. Como freelancer, trabalhei com a GHS Web no desenvolvimento do layout responsivo utilizando HTML, CSS e JavaScript.'
+                description={t('projects.santaVeiculos')}
                 url='https://www.santaveiculos.com.br/'
                 image={santaVeiculos}
               />
@@ -50,7 +57,7 @@ function ProjectsPage () {
               <Project
                 title='Tênis Clube Santa Cruz'
                 technologies={['WordPress', 'HTML', 'CSS']}
-                description='Portal desenvolvido com Wordpress para clube de Santa Cruz do Sul, auxiliei no desenvolvimento do tema personalizado utilizando Bootstrap e jQuery, e também no desenvolvimento de tipos de páginas e tipos de posts customizados.'
+                description={t('projects.tenisClub')}
                 url='http://www.tenisclubesantacruz.com/'
                 image={tenisClubeImage}
               />
@@ -58,7 +65,7 @@ function ProjectsPage () {
               <Project
                 title='PC Veículos'
                 technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
-                description='Web site desenvolvido para uma revenda de veículos de Santa Cruz do Sul em parceria com a GHS Web. Nesse projeto foram aplicados conhecimentos em HTML, CSS e JavaScript, além de conexão com o banco de dados utilizando PHP e MySQL.'
+                description={t('projects.pcVeiculos')}
                 url='http://www.pcveiculosrs.com.br/'
                 image={pcVeiculos}
               />
@@ -66,19 +73,9 @@ function ProjectsPage () {
               <Project
                 title='NUMA Laudos'
                 technologies={['JavaScript', 'HTML', 'CSS', 'Bootstrap']}
-                description='Web site desenvolvido em parceria com a GHS Web. Trabalhei no frontend aplicando conhecimentos em HTML, CSS e JavaScript, com layout responsivo.'
+                description={t('projects.numa')}
                 url='https://www.numalaudos.com.br/'
                 image={numaLaudos}
-              />
-
-              <Project
-                title='Jogo da Velha'
-                technologies={['React.js', 'HTML', 'Sass']}
-                description='Jogo da velha, desenvolvido em React.js, HTML e Sass, para aprimorar conhecimentos em lógica, grid e responsivo. Foi utilizado o framework Bootstrap. Possui verificação de ganhador, e somatória de pontos e empates.
-								'
-                url='https://jogodavelha.marianazambarda.com/'
-                image={jogoDaVelha}
-                gitHubURL='https://github.com/marizambarda/jogo-da-velha'
               />
             </Col>
           </Row>
@@ -89,6 +86,8 @@ function ProjectsPage () {
 }
 
 function Project ({ image, title, technologies, description, url, gitHubURL }) {
+  const { t } = useTranslation('common')
+
   const imageColumn = (
     <Col lg={5}>
       <Image className='project-image' src={image} />
@@ -110,11 +109,11 @@ function Project ({ image, title, technologies, description, url, gitHubURL }) {
       </div>
       <div className='buttons'>
         <Button href={url} variant='outline-primary' target='_blank'>
-          Ver Site
+          {t('projects.visitWebsite')}
         </Button>{' '}
         {gitHubURL && (
           <Button href={gitHubURL} variant='outline-primary' target='_blank'>
-            Ver no GitHub
+            {t('projects.seeOnGithub')}
           </Button>
         )}
       </div>
