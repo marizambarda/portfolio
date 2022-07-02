@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import classNames from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
@@ -13,19 +13,47 @@ import {
   GITHUB_URL
 } from '../../constants'
 import './Menu.scss'
+import Select from '../Select'
 
 function Menu () {
   return (
     <div>
+      <Header/>
       <MenuDesktop />
       <MobileMenu />
     </div>
   )
 }
+function Header () {
+  const { t, i18n } = useTranslation('common')
 
+  return (
+
+      <Container >
+    <div className='desktop-header'>
+          <Select
+            onChange={i18n.changeLanguage}
+            label={t('languages.language')}
+            options={[
+              {
+                value: 'en',
+                label: 'English'
+              },
+              {
+                value: 'pt-BR',
+                label: 'Português'
+              }
+            ]}
+          />
+    </div>
+      </Container>
+
+    
+  )
+}
 function MenuDesktop () {
   const hidden = useHiddenScroll()
-  const { t } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
 
   return (
     <div className={classNames('menu-desktop', { hidden: hidden })}>
@@ -54,15 +82,29 @@ function MenuDesktop () {
             </ul>
           </div>
           <div className='social-media'>
-            <a href={EMAIL_URL} target='_blank'>
+            <a href={EMAIL_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faEnvelopeOpenText} className='icon' />
             </a>
-            <a href={LINKEDIN_URL} target='_blank'>
+            <a href={LINKEDIN_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
             </a>
-            <a href={GITHUB_URL} target='_blank'>
+            <a href={GITHUB_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faGithub} className='icon' />
             </a>
+            <Select
+              onChange={i18n.changeLanguage}
+              label={t('languages.language')}
+              options={[
+                {
+                  value: 'en',
+                  label: 'English'
+                },
+                {
+                  value: 'pt-BR',
+                  label: 'Português'
+                }
+              ]}
+            />
           </div>
         </div>
       </Container>
@@ -130,13 +172,13 @@ function MobileMenu () {
             </li>
           </ul>
           <div className='social-media'>
-            <a href={EMAIL_URL} target='_blank'>
+            <a href={EMAIL_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faEnvelopeOpenText} className='icon' />
             </a>
-            <a href={LINKEDIN_URL} target='_blank'>
+            <a href={LINKEDIN_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
             </a>
-            <a href={GITHUB_URL} target='_blank'>
+            <a href={GITHUB_URL} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faGithub} className='icon' />
             </a>
           </div>

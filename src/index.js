@@ -9,7 +9,11 @@ import i18next from 'i18next'
 import common_ptBr from '../src/translations/pt-BR/common.json'
 import common_en from '../src/translations/en/common.json'
 
-const userLang = navigator.language || navigator.userLanguage || 'en'
+const userLang =
+  localStorage.getItem('language') ||
+  navigator.language ||
+  navigator.userLanguage ||
+  'en'
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -22,6 +26,10 @@ i18next.init({
       common: common_ptBr
     }
   }
+})
+
+i18next.on('languageChanged', language => {
+  localStorage.setItem('language', language)
 })
 
 ReactDOM.render(

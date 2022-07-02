@@ -1,0 +1,31 @@
+.dropdown {
+  z-index: 5;
+
+  @media (min-width: 992px) {
+    z-index: 8;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
+  .btn{
+    padding: 0;
+    &:focus{
+      box-shadow: none;
+    };
+    svg{
+      margin: 0;
+    }
+  }
+
+
+  .dropdown-item:hover {
+    background-color: #e8dcf2;
+  }
+  .icon {
+    font-size: 30px !important;
+    padding: 0;
+    margin: 0;
+    color: #7a0088;
+  }
+
+}

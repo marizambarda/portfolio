@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Form, Row, Col } from 'react-bootstrap'
+import { Button, Container, Row, Col } from 'react-bootstrap'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { MENU_OFFSET } from '../../constants'
 import './HomePage.scss'
@@ -53,23 +53,6 @@ function HomePage () {
                   >
                     {t('home.contact')}
                   </Button>
-                </li>
-
-                <li>
-                  <Select
-                    onChange={i18n.changeLanguage}
-                    label={t('languages.language')}
-                    options={[
-                      {
-                        value: 'en',
-                        label: 'English'
-                      },
-                      {
-                        value: 'pt-BR',
-                        label: 'Português'
-                      }
-                    ]}
-                  />
                 </li>
               </ul>
             </div>
