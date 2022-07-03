@@ -25,11 +25,8 @@ function AboutPage () {
               <p>{t('about.citifydProjects')}</p>
               <p>
                 {replace(t('about.contact'), {
-                  'contact me': (
-                    <AnchorLink href='#contact'>contact me</AnchorLink>
-                  ),
-                  'my projects': (
-                    <AnchorLink href='#projects'>my projects</AnchorLink>
+                  'get in touch': (
+                    <AnchorLink href='#contact'>get in touch</AnchorLink>
                   ),
                   'entrar em contato comigo': (
                     <AnchorLink href='#contact'>
@@ -75,7 +72,7 @@ function AboutPage () {
                     › {t('languages.portuguese')} - {t('languages.fluent')}
                   </li>
                   <li>
-                    › {t('languages.english')} - {t('languages.intermediary')}
+                    › {t('languages.english')} - {t('languages.intermediate')}
                   </li>
                 </ul>
               </div>

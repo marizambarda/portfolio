@@ -8,24 +8,24 @@
     "contact": "Contact"
   },
   "about": {
-    "aboutMe": "I'm 24 years old, I'm a front-end developer, currently working at [Citifyd]. Course Analysis and Systems Development at Estácio de Sá university and I have intermediate English. I am a person willing to learn new technologies and always try to improve my knowledge. Today at [Citifyd] I work with the development of new features in the system using React.",
-    "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's Dashboard from AngularJS to React. In these projects we refactored the entire system, implemented the Storybook with the creation of reusable components, in addition to the creation of unit tests. I also worked on the development of the institutional website at the company, using nextJS, css modules, typescript and storybook.",
-    "contact": "If you are interested in getting to know my works or exchange any ideas, do not hesitate to [contact me] or learn more about [my projects]!",
+    "aboutMe": "I'm a front-end developer currently working at Citifyd. I'm currently studying Analysis and Systems Development at the Estácio de Sá university. I like to solve problems, and I'm always willing to learn new tools and technologies to solve them in a better way.",
+    "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's parking provider Dashboard from Angular.js to React. In these projects we refactored the entire system, implemented Storybook with the creation of reusable components, in addition to the creation of unit tests. I've also worked on the development of the institutional website at the company, using Next.JS, CSS modules, TypeScript and Storybook.",
+    "contact": "If you are interested in getting to know my work or just exchange ideas, do not hesitate to [get in touch]!",
     "technologies": "Technologies",
     "responsive": "Responsive"
   },
   "projects": {
     "twitterClone": {
       "title": "Twitter Clone",
-      "description": "Twitter clone, developed to improve knowledge in Frontend and Backend. It has image upload features, password recovery, user name and email validation, follow users, timeline, mentions, hashtags and publication time. The frontend used the React.js library, the Bootstrap framework, HTML and Sass. On the backend, node.js and MySQL."
+      "description": "Twitter clone, developed to practice full-stack development. It has image upload features, password recovery, user name and email validation, ability to follow users, timeline, mentions, and hashtags. The front-end uses React.js,  Bootstrap, HTML and Sass. On the back-end, Node.js with Express, and MySQL."
     },
-    "santaVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. As a freelancer, I worked with GHS Web in the development of responsive layout using HTML, CSS and JavaScript.",
-    "tenisClub": "Portal developed with Wordpress for a club in Santa Cruz do Sul, I helped in the development of the custom theme using Bootstrap and jQuery, and also in the development of page types and custom post types.",
-    "pcVeiculos": "Website developed for a car dealership in Santa Cruz do Sul with GHS Web. In this project, knowledge in HTML, CSS and JavaScript was applied, as well as connection to the database using PHP and MySQL.",
-    "numa": "Website developed with GHS Web. I worked on the frontend applying knowledge in HTML, CSS and JavaScript, with responsive layout",
+    "santaVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. As a freelancer, I worked for GHS Web in the development of responsive layout using HTML, CSS and JavaScript.",
+    "tenisClub": "Portal developed with Wordpress for a club in Santa Cruz do Sul, I worked on development of a custom theme using Bootstrap and jQuery, and also in the development of page types and custom post types.",
+    "pcVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. In this project, knowledge in HTML, CSS and JavaScript was applied, as well as connection to the database using PHP and MySQL.",
+    "numa": "Website developed with GHS Web. I worked on the frontend applying knowledge in HTML, CSS and JavaScript, with responsive layout.",
     "jogoDaVelha": { 
       "title": "Tic-tac-toe",
-      "description": "Tic-tac-toe, developed in React.js, HTML and Sass, to improve knowledge in logic, grid and responsive. Bootstrap framework was used. It has winner verification, and sum of points and ties."
+      "description": "Tic-tac-toe game developed in React.js, HTML and Sass with Bootstrap, to improve knowledge in logic, grid and responsive. It has winner verification, and sum of points and ties."
     },
     "visitWebsite": "Visit website",
     "seeOnGithub": "See on GitHub"
@@ -37,6 +37,6 @@
     "english":   "English",
     "portuguese": "Portuguese",
     "fluent": "Fluent",
-    "intermediary": "Intermediary"
+    "intermediate": "Intermediate"
   }
 }
