@@ -19,7 +19,7 @@ function AboutPage () {
               </h2>
               <p>
                 {replace(t('about.aboutMe'), {
-                  Citifyd: <AnchorLink href='#contact'>Citifyd</AnchorLink>
+                  Citifyd: <a target='_blank' href='https://www.citifyd.com/' rel="noreferrer">Citifyd</a>
                 })}
               </p>
               <p>{t('about.citifydProjects')}</p>
