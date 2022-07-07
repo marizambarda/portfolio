@@ -8,9 +8,9 @@
     "contact": "Contact"
   },
   "about": {
-    "aboutMe": "I'm a front-end developer currently working at [Citifyd]. I'm currently studying Analysis and Systems Development at the Estácio de Sá university. I like to solve problems, and I'm always willing to learn new tools and technologies to solve them in a better way.",
-    "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's parking provider Dashboard from Angular.js to React. In these projects we refactored the entire system, implemented Storybook with the creation of reusable components, in addition to the creation of unit tests. I've also worked on the development of the institutional website at the company, using Next.JS, CSS modules, TypeScript and Storybook.",
-    "contact": "If you are interested in getting to know my work or just exchange ideas, do not hesitate to [get in touch]!",
+    "aboutMe": "I'm a front-end developer currently working at [Citifyd]. I'm currently studying Analysis and Systems Development at the Estácio de Sá University. I like to solve problems, and I'm always willing to learn new tools and technologies to solve them in a better way.",
+    "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's parking provider Dashboard from Angular.js to React. In these projects, we refactored the entire system, and implemented Storybook with the creation of reusable components, in addition to the creation of unit tests. I've also worked on the development of the institutional website at the company, using Next.JS, CSS modules, TypeScript, and Storybook.",
+    "contact": "If you are interested in getting to know my work or just exchanging ideas, do not hesitate to [get in touch]!",
     "technologies": "Technologies",
     "responsive": "Responsive"
   },
