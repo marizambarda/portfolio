@@ -1,0 +1,39 @@
+.section-projects {
+	min-height: 80vh;
+	h2 {
+		margin-bottom: 40px;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
+
+	.project-image {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.projects-content {
+		color: #000;
+		.row {
+			margin-bottom: 40px;
+		}
+
+		.buttons a {
+			display: block;
+
+			@media (min-width: 576px) {
+				display: inline-block;
+			}
+		}
+
+		h3 {
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 3px;
+		}
+		p {
+			font-weight: 400;
+			margin-bottom: 0px;
+		}
+	}
+}

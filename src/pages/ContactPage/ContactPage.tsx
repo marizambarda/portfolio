@@ -1,21 +1,23 @@
+import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { EMAIL_URL, LINKEDIN_URL, GITHUB_URL } from "../../constants.ts";
 import { useTranslation } from "react-i18next";
+import "./ContactPage.scss";
 
 function ContactPage() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="min-h-20 mt-14" id="contact">
+    <div className="sections-contact page-section" id="contact">
       <Container>
         <Row>
           <Col md={{ span: 10, offset: 1 }}>
-            <div>
-              <h2 className="border-b-2 border-[#9f69a5] mb-2.5 font-light inline-block">
-                {t("home.contact")}
+            <div className="contact-content ">
+              <h2>
+                <span> {t("home.contact")}</span>
               </h2>
               <div>
                 <p>{t("contact")}</p>
@@ -23,7 +25,7 @@ function ContactPage() {
             </div>
             <Row>
               <Col md={{ span: 6, offset: 3 }}>
-                <ul>
+                <ul className="social-media">
                   <li>
                     <Button
                       href={EMAIL_URL}
@@ -31,7 +33,10 @@ function ContactPage() {
                       variant="outline-primary"
                       size="lg"
                     >
-                      <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                      <FontAwesomeIcon
+                        icon={faEnvelopeOpenText}
+                        className="icon"
+                      />
                       <span>Email</span>
                     </Button>
                   </li>
@@ -42,7 +47,7 @@ function ContactPage() {
                       variant="outline-primary linkedin"
                       size="lg"
                     >
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                      <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
                       <span>LinkedIn</span>
                     </Button>
                   </li>
@@ -53,7 +58,7 @@ function ContactPage() {
                       variant="outline-primary github"
                       size="lg"
                     >
-                      <FontAwesomeIcon icon={faGithub} />
+                      <FontAwesomeIcon icon={faGithub} className="icon" />
                       <span>GitHub</span>
                     </Button>
                   </li>

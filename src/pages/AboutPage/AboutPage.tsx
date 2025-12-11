@@ -1,19 +1,21 @@
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useTranslation } from "react-i18next";
+import "./AboutPage.scss";
 import { replace } from "../../translations/utils";
 
 function AboutPage() {
   const { t } = useTranslation("common");
 
   return (
-    <div className="min-h-20 mt-14" id="about">
+    <div className="section-about page-section" id="about">
       <Container>
-        <div>
+        <div className="about-content">
           <Row>
             <Col md={{ span: 5, offset: 1 }}>
-              <h2 className="border-b-2 border-[#9f69a5] mb-2.5 font-light inline-block">
-                {t("home.aboutMe")}
+              <h2>
+                <span>{t("home.aboutMe")}</span>
               </h2>
               <p>
                 {replace(t("about.aboutMe"), {
@@ -46,7 +48,7 @@ function AboutPage() {
               </p>
             </Col>
             <Col md={{ span: 3, offset: 1 }}>
-              <div>
+              <div className="information">
                 <h3>{t("about.technologies")}</h3>
                 <Row>
                   <Col>
@@ -71,7 +73,7 @@ function AboutPage() {
                   </Col>
                 </Row>
               </div>
-              <div>
+              <div className="information">
                 <h3>{t("languages.languages")}</h3>
                 <ul>
                   <li>
