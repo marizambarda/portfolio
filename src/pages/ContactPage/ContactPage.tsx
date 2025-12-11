@@ -32,7 +32,6 @@ function ContactPage() {
                       target="_blank"
                       variant="outline-primary"
                       size="lg"
-                      block
                     >
                       <FontAwesomeIcon
                         icon={faEnvelopeOpenText}
@@ -47,7 +46,6 @@ function ContactPage() {
                       target="_blank"
                       variant="outline-primary linkedin"
                       size="lg"
-                      block
                     >
                       <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
                       <span>LinkedIn</span>
@@ -59,7 +57,6 @@ function ContactPage() {
                       target="_blank"
                       variant="outline-primary github"
                       size="lg"
-                      block
                     >
                       <FontAwesomeIcon icon={faGithub} className="icon" />
                       <span>GitHub</span>
