@@ -14,7 +14,7 @@ function HomePage() {
     <div className="section-home page-section" id="home">
       <Container className="section-home__about">
         <Row>
-          <Col lg={{ span: 6, offset: 1 }}>
+          <Col>
             <p className="salutation">
               {t("home.salutation")}
               <span>👋</span>
@@ -37,6 +37,16 @@ function HomePage() {
                 <li>
                   <Button
                     as={AnchorLink}
+                    href="#experience"
+                    offset={MENU_OFFSET}
+                    variant="outline-primary"
+                  >
+                    {t("home.experience")}
+                  </Button>
+                </li>
+                <li>
+                  <Button
+                    as={AnchorLink}
                     href="#projects"
                     offset={MENU_OFFSET}
                     variant="outline-primary"
@@ -44,6 +54,7 @@ function HomePage() {
                     {t("home.projects")}
                   </Button>
                 </li>
+
                 <li>
                   <Button
                     as={AnchorLink}

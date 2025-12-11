@@ -4,6 +4,7 @@
     "salutation": "Olá!",
     "myName": "Meu nome é",
     "aboutMe": "Sobre mim",
+    "experience": "Experiência",
     "projects": "Projetos",
     "contact": "Contato"
   },
@@ -15,11 +16,22 @@
     "technologies": "Tecnologias",
     "responsive": "Responsivo"
   },
+  "experience": {
+    "citifyd": {
+      "description": "A Citifyd conecta motoristas a estacionamentos e empresas, reduzindo custos, aumentando a receita e, em última análise, dinamizando o comércio local. Facilitamos a mobilidade urbana, tornando-a mais prática e econômica, permitindo que motoristas encontrem e comprem vagas de estacionamento, que os estacionamentos ofereçam vagas e que as empresas locais atraiam clientes. Na Citifyd, trabalhei na manutenção e no desenvolvimento de novas funcionalidades utilizando tecnologias front-end como React e NextJS. Entre minhas principais realizações, destaco: • Reescrita incremental do painel de controle de estacionamentos da Citifyd, migrando do legado Angular.JS para React, visando a manutenção a longo prazo e a continuidade operacional do sistema. • Implementação de um conjunto de componentes reutilizáveis ​​com Storybook (citifyd/style) em TypeScript, além da criação de testes unitários. • Desenvolvimento do website voltado para o mercado B2B, com foco em SEO, utilizando tecnologias modernas como NextJS, módulos CSS, TypeScript e Storybook. • Funcionalidades do painel de controle, como preços dinâmicos para eventos, que permitem o ajuste automático dos preços com base no número de transações ou no tempo restante até o início do evento.",
+      "period": "Agosto 2021 – Abril 2024"
+    },
+    "suitable": {
+      "description": "Suitable é um sistema de gestão para restaurantes. Seu produto principal é um aplicativo web personalizado para cada estabelecimento, permitindo que eles ofereçam uma experiência de pedido eficiente aos clientes enquanto evitam as taxas de plataformas como o iFood. O sistema também inclui um bot próprio para WhatsApp (a plataforma de mensagens mais popular do Brasil) que direciona o usuário para o app do restaurante e envia atualizações automáticas sobre o status do pedido. Durante meu período na empresa, não houve desenvolvimento de novas funcionalidades, na correção de bugs e na refatoração do código do painel de controle do restaurante, desenvolvido em React. Também participei da reescrita completa do site, migrando de PHP para Next.js.",
+      "period": "Dezembro 2020 – Julho 2021"
+    }
+  },
   "projects": {
     "twitterClone": {
       "title": "Clone do Twitter",
       "description": "Clone do Twitter, desenvolvido para aprimorar conhecimentos em Frontend e Backend. Possui funcionalidades de upload de imagens, recuperação de senha, validação de nome e email de usuários, seguir usuários, timeline, menções, hashtags e horário de publicação. No frontend foi utilizada a biblioteca React.js, o framework Bootstrap, HTML e Sass. No backend, node.js e MySQL."
     },
+
     "santaVeiculos": "Web site desenvolvido para revenda de veículos de Santa Cruz do Sul. Como freelancer, trabalhei com a GHS Web no desenvolvimento do layout responsivo utilizando HTML, CSS e JavaScript.",
     "tenisClub":"Portal desenvolvido com Wordpress para clube em Santa Cruz do Sul, auxiliei no desenvolvimento do tema personalizado utilizando Bootstrap e jQuery, e também no desenvolvimento de tipos de páginas e tipos de posts customizados.",
     "pcVeiculos": "Web site desenvolvido para uma revenda de veículos de Santa Cruz do Sul em parceria com a GHS Web. Nesse projeto foram aplicados conhecimentos em HTML, CSS e JavaScript, além de conexão com o banco de dados utilizando PHP e MySQL.",

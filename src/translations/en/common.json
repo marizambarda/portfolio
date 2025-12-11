@@ -4,6 +4,7 @@
     "salutation": "Hi!",
     "myName": " My name is",
     "aboutMe": "About me",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -14,19 +15,25 @@
     "technologies": "Technologies",
     "responsive": "Responsive"
   },
-  "projects": {
-    "twitterClone": {
-      "title": "Twitter Clone",
-      "description": "Twitter clone, developed to practice full-stack development. It has image upload features, password recovery, user name and email validation, ability to follow users, timeline, mentions, and hashtags. The front-end uses React.js,  Bootstrap, HTML and Sass. On the back-end, Node.js with Express, and MySQL."
+  "experience": {
+    "events": {
+      "description": "Events.com is a global event management platform that empowers organizers to plan, promote, sell, and execute live, virtual, and hybrid events using a suite of modern, integrated tools. The platform supports everything from ticketing and sponsorships to marketing, data insights, and on-site execution — helping creators deliver exceptional event experiences. At Events.com, I work as a Front-End Engineer contributing to the development and maintenance of scalable, user-focused web applications using React and TypeScript. My key responsibilities and achievements include: Collaborating with cross-functional teams to build and maintain modern, responsive, and accessible applications that support the full event lifecycle. Implementing reusable UI components and design patterns, ensuring consistency across the platform and contributing to the evolution of the company’s design system. Optimizing performance and SEO, applying best practices to improve loading speed, accessibility, Core Web Vitals, and overall discoverability. Supporting the development of new features across multiple product areas, including event discovery, ticketing flows, and organizer tools.",
+      "period": "Jan 2024 – Present"
     },
+    "citifyd": {
+      "description": "Citifyd connects drivers with parking providers and businesses, reducing costs, increasing revenue and ultimately energizing local commerce. We make urban mobility hassle-free and less expensive by making it easier for drivers to find and buy parking, for parking providers to offer a space, and for surrounding businesses to attract customers locally. At Citifyd, I worked on maintenance and development of new features using front-end technologies such as React and NextJS. Notable achievements include: • Incremental rewrite of Citifyd's Parking Provider Dashboard from legacy Angular.JS to React for long term maintainability while keeping the system operational. • Implemented a set of reusable components with Storybook (citifyd/style) in TypeScript, in addition to creation of unit tests. • Development of the B2B-focused website with special attention to SEO using modern technologies such as NextJS, CSS modules, TypeScript and Storybook. • Dashboard features such as dynamic price for events, which makes it possible to automatically adjust the prices based on the amount of transactions or time left until the event time.",
+      "period": "August 2021 – April 2024"
+    },
+    "suitable":  {
+      "description":  "Suitble is a management system for restaurants. Its main product is a customized web application for each establishment, allowing them to offer an efficient ordering experience to customers while avoiding platform fees like iFood. The system also includes its own bot for WhatsApp (the most popular messaging platform in Brazil) that directs the user to the restaurant's app and sends automatic updates on the order status. During my time at the company, there was no development of new features, bug fixing, or refactoring of the restaurant's control panel code, developed in React. I also participated in the complete rewriting of the website, migrating from PHP to Next.js.",
+      "period": "December 2020 – July 2021"
+    }
+  },
+  "projects": {
     "santaVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. As a freelancer, I worked for GHS Web in the development of responsive layout using HTML, CSS and JavaScript.",
     "tenisClub": "Portal developed with Wordpress for a club in Santa Cruz do Sul, I worked on development of a custom theme using Bootstrap and jQuery, and also in the development of page types and custom post types.",
     "pcVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. In this project, knowledge in HTML, CSS and JavaScript was applied, as well as connection to the database using PHP and MySQL.",
     "numa": "Website developed with GHS Web. I worked on the frontend applying knowledge in HTML, CSS and JavaScript, with responsive layout.",
-    "jogoDaVelha": { 
-      "title": "Tic-tac-toe",
-      "description": "Tic-tac-toe game developed in React.js, HTML and Sass with Bootstrap, to improve knowledge in logic, grid and responsive. It has winner verification, and sum of points and ties."
-    },
     "visitWebsite": "Visit website",
     "seeOnGithub": "See on GitHub"
   },

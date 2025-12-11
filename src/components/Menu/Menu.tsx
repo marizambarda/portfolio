@@ -68,6 +68,11 @@ function MenuDesktop() {
                 </AnchorLink>
               </li>
               <li>
+                <AnchorLink offset={MENU_OFFSET} href="#experience">
+                  {t("home.experience")}
+                </AnchorLink>
+              </li>
+              <li>
                 <AnchorLink offset={MENU_OFFSET} href="#projects">
                   {t("home.projects")}
                 </AnchorLink>
@@ -149,6 +154,15 @@ function MobileMenu() {
                 onClick={() => setMenuOpen(false)}
               >
                 {t("home.aboutMe")}
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink
+                offset={MENU_OFFSET}
+                href="#experience"
+                onClick={() => setMenuOpen(false)}
+              >
+                {t("home.experience")}
               </AnchorLink>
             </li>
             <li>
