@@ -6,7 +6,6 @@ import eventsImage from "../../images/events.png";
 import suitableImage from "../../images/suitable.png";
 import { useTranslation } from "react-i18next";
 
-import "./ProjectsPage.scss";
 import ShowcaseItem from "../../components/ShowcaseItem/ShowcaseItem.tsx";
 
 function ProjectsPage() {
@@ -14,13 +13,13 @@ function ProjectsPage() {
 
   return (
     <>
-      <div className="section-projects page-section" id="experience">
+      <div id="experience">
         <Container>
-          <div className="projects-content">
+          <div>
             <Row>
               <Col md={{ span: 10, offset: 1 }}>
-                <h2>
-                  <span>{t("home.experience")}</span>
+                <h2 className="border-b-2 border-[#9f69a5] mb-2.5 font-light inline-block">
+                  {t("home.experience")}
                 </h2>
                 <ShowcaseItem
                   title="Events.com"
@@ -63,9 +62,9 @@ function ProjectsPage() {
         </Container>
       </div>
 
-      <div className="section-projects page-section" id="projects">
+      <div id="projects">
         <Container>
-          <div className="projects-content">
+          <div className="text-black">
             <Row>
               <Col md={{ span: 10, offset: 1 }}>
                 <h2>

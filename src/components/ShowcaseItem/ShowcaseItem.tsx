@@ -1,6 +1,5 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import "./ShowcaseItem.scss";
 
 type ShowcaseItemProps = {
   image: string;
@@ -25,7 +24,7 @@ function ShowcaseItem({
 
   const imageColumn = (
     <Col lg={5}>
-      <Image className="project-image" src={image} />
+      <Image src={image} />
     </Col>
   );
 
@@ -35,15 +34,13 @@ function ShowcaseItem({
         <h3 className="p-2">{title}</h3>
         <div>
           {technologies.map((technology) => (
-            <div key={technology} className="badge-technologies">
-              {technology}
-            </div>
+            <div key={technology}>{technology}</div>
           ))}
         </div>
-        <p className="period">{period}</p>
+        <p>{period}</p>
         <p>{description}</p>
       </div>
-      <div className="buttons">
+      <div>
         <Button href={url} variant="outline-primary" target="_blank">
           {t("projects.visitWebsite")}
         </Button>{" "}
