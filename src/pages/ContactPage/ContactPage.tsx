@@ -25,7 +25,7 @@ function ContactPage() {
             </div>
             <Row>
               <Col md={{ span: 6, offset: 3 }}>
-                <ul className="social-media">
+                <ul>
                   <li>
                     <Button
                       href={EMAIL_URL}

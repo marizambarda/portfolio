@@ -9,6 +9,8 @@ import HomePage from "./pages/HomePage/index.ts";
 import AboutPage from "./pages/AboutPage/index.ts";
 import ProjectsPage from "./pages/ProjectsPage/index.ts";
 import ContactPage from "./pages/ContactPage/index.ts";
+import ExperiencePage from "./pages/ExperiencePage/index.ts";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Menu />
       <HomePage />
       <AboutPage />
+      <ExperiencePage />
       <ProjectsPage />
       <ContactPage />
     </div>

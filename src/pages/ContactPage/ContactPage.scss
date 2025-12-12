@@ -11,8 +11,17 @@
 	}
 	.icon {
 		margin-right: 10px;
-	}
+	};
+		.btn {
+			display: block;
+			min-width: 300px;
+
+			@media (min-width: 576px) {
+				display: inline-block;
+			}
+		}
 }
+
 
 .btn.linkedin {
 	padding-right: 0px;

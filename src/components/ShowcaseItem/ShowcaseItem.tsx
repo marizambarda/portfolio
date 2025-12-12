@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./ShowcaseItem.scss";
 
 type ShowcaseItemProps = {
-  image: string;
+  image?: string;
   title: string;
   technologies: string[];
   description: string;
@@ -23,16 +23,20 @@ function ShowcaseItem({
 }: ShowcaseItemProps) {
   const { t } = useTranslation("common");
 
-  const imageColumn = (
+  const imageColumn = image ? (
     <Col lg={5}>
-      <Image className="project-image" src={image} />
+      <Image className="project-image" src={image} alt={title} />
     </Col>
-  );
+  ) : null;
 
   const contentColumn = (
-    <Col lg={7}>
+    <Col
+      md={{ span: image ? 7 : 10, offset: image ? 0 : 1 }}
+      lg={{ span: image ? 7 : 10, offset: image ? 0 : 1 }}
+    >
       <div>
-        <h3 className="p-2">{title}</h3>
+        <h3>{title}</h3>
+
         <div>
           {technologies.map((technology) => (
             <div key={technology} className="badge-technologies">
@@ -40,15 +44,27 @@ function ShowcaseItem({
             </div>
           ))}
         </div>
-        <p className="period">{period}</p>
+
+        {period && <p className="period">{period}</p>}
         <p>{description}</p>
       </div>
+
       <div className="buttons">
-        <Button href={url} variant="outline-primary" target="_blank">
+        <Button
+          href={url}
+          variant="outline-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
           {t("projects.visitWebsite")}
         </Button>{" "}
         {gitHubURL && (
-          <Button href={gitHubURL} variant="outline-primary" target="_blank">
+          <Button
+            href={gitHubURL}
+            variant="outline-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
             {t("projects.seeOnGithub")}
           </Button>
         )}
@@ -57,7 +73,7 @@ function ShowcaseItem({
   );
 
   return (
-    <Row>
+    <Row className={image ? "with-image" : "no-image"}>
       {imageColumn}
       {contentColumn}
     </Row>

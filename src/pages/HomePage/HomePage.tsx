@@ -1,9 +1,7 @@
-import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MENU_OFFSET } from "../../constants.ts";
 import "./HomePage.scss";
-import Select from "../../components/Select";
 
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +12,7 @@ function HomePage() {
     <div className="section-home page-section" id="home">
       <Container className="section-home__about">
         <Row>
-          <Col>
+          <Col md={{ span: 10, offset: 1 }}>
             <p className="salutation">
               {t("home.salutation")}
               <span>👋</span>

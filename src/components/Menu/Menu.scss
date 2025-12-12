@@ -1,7 +1,23 @@
+
+.background::before {
+  z-index: 0;
+}
+
+
 .desktop-header {
 	margin-top: 20px;	
 	text-align: right;
 	margin-right: 60px;
+	display: flex;
+	justify-content: end;
+	  position: relative;
+  z-index: 1;
+	
+
+		.icon {
+			font-size: 30px;
+			margin-right: 20px;
+		}
 	
 	@media (min-width: 768px) {
 		margin-right: 20px;
@@ -13,6 +29,7 @@
 
 }
 .menu-desktop {
+	
 	position: fixed;
 	top: 0;
 	left: 0;

@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "about": {
-    "aboutMe": "I'm a front-end developer currently working at [Citifyd]. I'm currently studying Analysis and Systems Development at the Estácio de Sá University. I like to solve problems, and I'm always willing to learn new tools and technologies to solve them in a better way.",
+    "aboutMe": "Currently, I work as a Frontend Engineer at [Events], where I contribute to the development and improvement of solutions focused on React and Capacitor. A graduate in Systems Analysis and Development from Estácio in 2023, my background allows me to apply solid design principles and develop effective REST APIs. I have previous experience as a Frontend Developer at Citifyd, where I participated in the refactoring of systems from AngularJS to React, and at Suitable, where I developed functionalities and rewrote systems using Next.js. I am always looking to learn new technologies and tools to offer innovative and efficient solutions.",
     "citifydProjects": "One of the main projects I've been working on is the refactor of Citifyd's parking provider Dashboard from Angular.js to React. In these projects, we refactored the entire system, and implemented Storybook with the creation of reusable components, in addition to the creation of unit tests. I've also worked on the development of the institutional website at the company, using Next.JS, CSS modules, TypeScript, and Storybook.",
     "contact": "If you are interested in getting to know my work or just exchanging ideas, do not hesitate to [get in touch]!",
     "technologies": "Technologies",
@@ -21,11 +21,11 @@
       "period": "Jan 2024 – Present"
     },
     "citifyd": {
-      "description": "Citifyd connects drivers with parking providers and businesses, reducing costs, increasing revenue and ultimately energizing local commerce. We make urban mobility hassle-free and less expensive by making it easier for drivers to find and buy parking, for parking providers to offer a space, and for surrounding businesses to attract customers locally. At Citifyd, I worked on maintenance and development of new features using front-end technologies such as React and NextJS. Notable achievements include: • Incremental rewrite of Citifyd's Parking Provider Dashboard from legacy Angular.JS to React for long term maintainability while keeping the system operational. • Implemented a set of reusable components with Storybook (citifyd/style) in TypeScript, in addition to creation of unit tests. • Development of the B2B-focused website with special attention to SEO using modern technologies such as NextJS, CSS modules, TypeScript and Storybook. • Dashboard features such as dynamic price for events, which makes it possible to automatically adjust the prices based on the amount of transactions or time left until the event time.",
+      "description": "Citifyd connects drivers with parking providers and local businesses, reducing costs, increasing revenue, and energizing local commerce by simplifying urban mobility. The platform makes it easier for drivers to find and purchase parking, for parking providers to offer available spaces, and for nearby businesses to attract customers locally. At Citifyd, I worked on the maintenance and development of new features using front-end technologies such as React and Next.js. My contributions included the incremental migration of the Parking Provider Dashboard from legacy AngularJS to React to ensure long-term maintainability while keeping the system fully operational, the implementation of a reusable component library in TypeScript using Storybook with accompanying unit tests, the development of a B2B-focused website with a strong emphasis on SEO using Next.js, CSS Modules, and modern front-end practices, and the creation of dashboard features such as dynamic event-based pricing, enabling automatic price adjustments based on transaction volume and time remaining until events.",
       "period": "August 2021 – April 2024"
     },
     "suitable":  {
-      "description":  "Suitble is a management system for restaurants. Its main product is a customized web application for each establishment, allowing them to offer an efficient ordering experience to customers while avoiding platform fees like iFood. The system also includes its own bot for WhatsApp (the most popular messaging platform in Brazil) that directs the user to the restaurant's app and sends automatic updates on the order status. During my time at the company, there was no development of new features, bug fixing, or refactoring of the restaurant's control panel code, developed in React. I also participated in the complete rewriting of the website, migrating from PHP to Next.js.",
+      "description":  "Suitable is a management system for restaurants. Its main product is a customized web application for each establishment, allowing them to offer an efficient ordering experience to customers while avoiding platform fees like iFood. The system also includes its own bot for WhatsApp (the most popular messaging platform in Brazil) that directs the user to the restaurant's app and sends automatic updates on the order status. During my time at the company, there was no development of new features, bug fixing, or refactoring of the restaurant's control panel code, developed in React. I also participated in the complete rewriting of the website, migrating from PHP to Next.js.",
       "period": "December 2020 – July 2021"
     }
   },
@@ -33,7 +33,6 @@
     "santaVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. As a freelancer, I worked for GHS Web in the development of responsive layout using HTML, CSS and JavaScript.",
     "tenisClub": "Portal developed with Wordpress for a club in Santa Cruz do Sul, I worked on development of a custom theme using Bootstrap and jQuery, and also in the development of page types and custom post types.",
     "pcVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. In this project, knowledge in HTML, CSS and JavaScript was applied, as well as connection to the database using PHP and MySQL.",
-    "numa": "Website developed with GHS Web. I worked on the frontend applying knowledge in HTML, CSS and JavaScript, with responsive layout.",
     "visitWebsite": "Visit website",
     "seeOnGithub": "See on GitHub"
   },
@@ -44,6 +43,6 @@
     "english":   "English",
     "portuguese": "Portuguese",
     "fluent": "Fluent",
-    "intermediate": "Intermediate"
+    "advanced": "Advanced"
   }
 }

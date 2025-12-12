@@ -13,7 +13,7 @@ import {
   GITHUB_URL,
 } from "../../constants.ts";
 import "./Menu.scss";
-import Select from "../Select/Select.tsx";
+import Select from "../Select/index.ts";
 
 function Menu() {
   return (
@@ -30,6 +30,15 @@ function Header() {
   return (
     <Container>
       <div className="desktop-header">
+        <a href={EMAIL_URL} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faEnvelopeOpenText} className="icon" />
+        </a>
+        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedinIn} className="icon" />
+        </a>
+        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} className="icon" />
+        </a>
         <Select
           onChange={(lang) => {
             if (lang) i18n.changeLanguage(lang);

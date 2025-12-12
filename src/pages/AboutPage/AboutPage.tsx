@@ -19,18 +19,17 @@ function AboutPage() {
               </h2>
               <p>
                 {replace(t("about.aboutMe"), {
-                  Citifyd: (
+                  Events: (
                     <a
                       target="_blank"
-                      href="https://www.citifyd.com/"
+                      href="https://www.events.com/"
                       rel="noreferrer"
                     >
-                      Citifyd
+                      Events.com
                     </a>
                   ),
                 })}
               </p>
-              <p>{t("about.citifydProjects")}</p>
               <p>
                 {replace(t("about.contact"), {
                   "get in touch": (
@@ -57,6 +56,8 @@ function AboutPage() {
                       <li>› JavaScript</li>
                       <li>› HTML</li>
                       <li>› Bootstrap</li>
+                      <li>› Capacitor</li>
+                      <li>›TanStack</li>
                       <li>› Storybook</li>
                       <li>› Git </li>
                     </ul>
@@ -67,6 +68,8 @@ function AboutPage() {
                       <li>› TypeScript</li>
                       <li>› CSS</li>
                       <li>› Material-UI</li>
+                      <li>› SWR</li>
+                      <li>› Tailwind</li>
                       <li>› jQuery</li>
                       <li>› {t("about.responsive")}</li>
                     </ul>
@@ -80,7 +83,7 @@ function AboutPage() {
                     › {t("languages.portuguese")} - {t("languages.fluent")}
                   </li>
                   <li>
-                    › {t("languages.english")} - {t("languages.intermediate")}
+                    › {t("languages.english")} - {t("languages.advanced")}
                   </li>
                 </ul>
               </div>
