@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage/index.ts";
 import ProjectsPage from "./pages/ProjectsPage/index.ts";
 import ContactPage from "./pages/ContactPage/index.ts";
 import ExperiencePage from "./pages/ExperiencePage/index.ts";
+import MemoryGame from "./components/MemoryGame/MemoryGame.tsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <ExperiencePage />
         <ProjectsPage />
         <ContactPage />
+        <MemoryGame />
       </div>
     </div>
   );

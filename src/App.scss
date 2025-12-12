@@ -14,20 +14,20 @@ body {
 }
 
 body {
-  /* IMPORTANT: remove o background-color sólido, senão ele tampa o galaxy */
+
   background: transparent;
   color: #e9d5ff;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
 
-/* wrapper do app */
+
 .app-shell {
   position: relative;
   min-height: 100vh;
 }
 
-/* seu conteúdo sempre acima do background */
+
 .section-content {
   position: relative;
   z-index: 1;
@@ -69,6 +69,7 @@ select {
 select {
   outline: none;
   color: #e9d5ff;
+
 }
 
 .btn-outline-primary,
