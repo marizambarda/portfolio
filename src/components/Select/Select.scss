@@ -18,14 +18,23 @@
   }
 
 
+  .dropdown-menu {
+    background-color: #e9d5ff;
+    color: #1b005f;
+
+  }
+    .dropdown-item {
+      color: #1b005f;
+    }
+
   .dropdown-item:hover {
-    background-color: #e8dcf2;
+    background-color: #1b005f;
   }
   .icon {
     font-size: 30px !important;
     padding: 0;
     margin: 0;
-    color: #7a0088;
+    color: #e9d5ff;
   }
 
 }

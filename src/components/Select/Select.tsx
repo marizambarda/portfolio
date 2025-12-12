@@ -15,7 +15,7 @@ const Select = ({ options, onChange }: SelectProps) => {
         <FontAwesomeIcon icon={faLanguage} className="icon" />
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu className="dropdown-menu">
         {options.map((option) => (
           <Dropdown.Item key={option.value} eventKey={option.value}>
             {option.label}
