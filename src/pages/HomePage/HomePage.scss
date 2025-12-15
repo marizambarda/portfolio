@@ -57,13 +57,18 @@
 			h1 {
 				font-size: 50px;
 			}
+	
 		}
 		&__menu {
+			button {
+				margin-right: 20px;
+			}
+
 			li {
 				display: inline-block;
 			}
 			a {
-				margin-right: 20px;
+				  text-decoration: none;
 			}
 		}
 	}

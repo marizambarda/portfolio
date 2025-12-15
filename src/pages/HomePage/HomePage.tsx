@@ -23,44 +23,32 @@ function HomePage() {
             <div className="section-home__menu">
               <ul>
                 <li>
-                  <Button
-                    as={AnchorLink}
-                    href="#about"
-                    offset={MENU_OFFSET}
-                    variant="outline-primary"
-                  >
-                    {t("home.aboutMe")}
+                  <Button variant="outline-primary">
+                    <AnchorLink href="#about" offset={MENU_OFFSET}>
+                      {t("home.aboutMe")}
+                    </AnchorLink>
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    as={AnchorLink}
-                    href="#experience"
-                    offset={MENU_OFFSET}
-                    variant="outline-primary"
-                  >
-                    {t("home.experience")}
+                  <Button variant="outline-primary">
+                    <AnchorLink href="#experience" offset={MENU_OFFSET}>
+                      {t("home.experience")}
+                    </AnchorLink>
                   </Button>
                 </li>
                 <li>
-                  <Button
-                    as={AnchorLink}
-                    href="#projects"
-                    offset={MENU_OFFSET}
-                    variant="outline-primary"
-                  >
-                    {t("home.projects")}
+                  <Button variant="outline-primary">
+                    <AnchorLink href="#projects" offset={MENU_OFFSET}>
+                      {t("home.projects")}
+                    </AnchorLink>
                   </Button>
                 </li>
 
                 <li>
-                  <Button
-                    as={AnchorLink}
-                    href="#contact"
-                    offset={MENU_OFFSET}
-                    variant="outline-primary"
-                  >
-                    {t("home.contact")}
+                  <Button variant="outline-primary">
+                    <AnchorLink href="#contact" offset={MENU_OFFSET}>
+                      {t("home.contact")}
+                    </AnchorLink>
                   </Button>
                 </li>
               </ul>
