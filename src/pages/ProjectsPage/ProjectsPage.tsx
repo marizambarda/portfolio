@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import tenisClubeImage from "../../images/tenis-clube.png";
 import santaVeiculos from "../../images/santa-veiculos.png";
 import pcVeiculos from "../../images/pc-veiculos.png";
+import mundoEscape from "../../images/mundo-escape.png";
+import siteCarro from "../../images/site-carro.png";
 import { useTranslation } from "react-i18next";
 
 import "./ProjectsPage.scss";
@@ -20,6 +22,20 @@ function ProjectsPage() {
                 <h2>
                   <span>{t("home.projects")}</span>
                 </h2>
+                <ShowcaseItem
+                  title="Site Carro"
+                  technologies={["Remix", "React", "HTML", "CSS", "Typescript"]}
+                  description={t("projects.siteCarro")}
+                  url="https://www.sitecarro.com.br/"
+                  image={siteCarro}
+                />
+                <ShowcaseItem
+                  title="Mundo Escape"
+                  technologies={["RubyOnRails", "HTML", "CSS", "Javascript"]}
+                  description={t("projects.mundoEscape")}
+                  url="http://www.mundoescape.com.br/"
+                  image={mundoEscape}
+                />
                 <ShowcaseItem
                   title="PC Veículos"
                   technologies={["JavaScript", "HTML", "CSS", "Bootstrap"]}
