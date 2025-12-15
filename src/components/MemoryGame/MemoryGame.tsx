@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./MemoryGame.scss";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 type Card = {
   id: string;
@@ -46,6 +47,7 @@ function buildDeck(): Card[] {
 }
 
 export default function MemoryGame() {
+  const { t, i18n } = useTranslation("common");
   const [cards, setCards] = useState<Card[]>(() => buildDeck());
   const [firstId, setFirstId] = useState<string | null>(null);
   const [secondId, setSecondId] = useState<string | null>(null);
@@ -123,23 +125,26 @@ export default function MemoryGame() {
       <header>
         <Container>
           <Row>
-            <Col md={{ span: 10, offset: 1 }}>
+            <Col md={{ span: 8, offset: 2 }}>
               <Row>
                 <Col>
                   <div>
-                    <h2>Memory Game</h2>
-                    <p>Find all pairs (12 cards)</p>
+                    <h2>{t("projects.memoryGame.title")}</h2>
+                    <p>{t("projects.memoryGame.findAll")}</p>
                   </div>
                 </Col>
                 <Col>
                   <div>
-                    Moves: <strong>{moves}</strong>
+                    <span>
+                      {t("projects.memoryGame.moves")}: <strong>{moves}</strong>
+                    </span>
                   </div>
-                  <div>
-                    Matched: <strong>{matchedCount}/12</strong>
-                  </div>
+                  <span>
+                    {t("projects.memoryGame.matched")}:{" "}
+                    <strong>{matchedCount}/12</strong>
+                  </span>
                   <button className="btn" onClick={resetGame}>
-                    Restart
+                    {t("projects.memoryGame.restart")}
                   </button>
                 </Col>
               </Row>
@@ -149,7 +154,7 @@ export default function MemoryGame() {
       </header>
       <Container>
         <Row>
-          <Col md={{ span: 10, offset: 1 }}>
+          <Col md={{ span: 8, offset: 2 }}>
             <div className="grid" role="grid" aria-label="Memory game grid">
               {cards.map((c) => (
                 <button

@@ -40,7 +40,14 @@
     "tenisClub": "Portal developed with Wordpress for a club in Santa Cruz do Sul, I worked on development of a custom theme using Bootstrap and jQuery, and also in the development of page types and custom post types.",
     "pcVeiculos": "Website developed for a car dealership in Santa Cruz do Sul. In this project, knowledge in HTML, CSS and JavaScript was applied, as well as connection to the database using PHP and MySQL.",
     "visitWebsite": "Visit website",
-    "seeOnGithub": "See on GitHub"
+    "seeOnGithub": "See on GitHub",
+    "memoryGame": {
+      "title": "Memory Game",
+      "findAll": "Find all pairs (12 cards)",
+      "moves": "Moves",
+      "matched": "Matched",
+      "restart": "Restart"
+    }
   },
   "contact": "You can use the channels below to get in touch:",
   "languages": {

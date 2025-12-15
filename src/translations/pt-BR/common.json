@@ -41,7 +41,14 @@
     "tenisClub":"Portal desenvolvido com Wordpress para clube em Santa Cruz do Sul, auxiliei no desenvolvimento do tema personalizado utilizando Bootstrap e jQuery, e também no desenvolvimento de tipos de páginas e tipos de posts customizados.",
     "pcVeiculos": "Web site desenvolvido para uma revenda de veículos de Santa Cruz do Sul em parceria com a GHS Web. Nesse projeto foram aplicados conhecimentos em HTML, CSS e JavaScript, além de conexão com o banco de dados utilizando PHP e MySQL.",
     "visitWebsite": "Ver site",
-    "seeOnGithub": "Ver no GitHub"
+    "seeOnGithub": "Ver no GitHub",
+    "memoryGame": {
+      "title": "Jogo da Memória",
+      "findAll": "Encontre todos os pares (12 cartas)",
+      "moves": "Movimentos",
+      "matched": "Encontrados",
+      "restart": "Reiniciar"
+    }
   },
   "contact": "Você pode usar os canais abaixo para entrar em contato:",
   "languages": {

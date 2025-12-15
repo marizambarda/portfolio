@@ -4,7 +4,6 @@ import { MENU_OFFSET } from "../../constants.ts";
 import "./HomePage.scss";
 
 import { useTranslation } from "react-i18next";
-import MemoryGame from "../../components/MemoryGame/MemoryGame.tsx";
 
 function HomePage() {
   const { t, i18n } = useTranslation("common");

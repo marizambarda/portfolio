@@ -23,8 +23,8 @@ function App() {
         <AboutPage />
         <ExperiencePage />
         <ProjectsPage />
-        <ContactPage />
         <MemoryGame />
+        <ContactPage />
       </div>
     </div>
   );
