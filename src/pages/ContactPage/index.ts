@@ -1,2 +1,2 @@
-import Page from "./ContactPage.tsx";
+import Page from "./ContactPage";
 export default Page;

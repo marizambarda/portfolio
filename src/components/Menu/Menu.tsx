@@ -11,9 +11,9 @@ import {
   EMAIL_URL,
   LINKEDIN_URL,
   GITHUB_URL,
-} from "../../constants.ts";
+} from "../../constants";
 import "./Menu.scss";
-import Select from "../Select/index.ts";
+import Select from "../Select/index";
 
 function Menu() {
   return (

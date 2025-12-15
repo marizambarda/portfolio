@@ -7,7 +7,7 @@ import siteCarro from "../../images/site-carro.png";
 import { useTranslation } from "react-i18next";
 
 import "./ProjectsPage.scss";
-import ShowcaseItem from "../../components/ShowcaseItem/ShowcaseItem.tsx";
+import ShowcaseItem from "../../components/ShowcaseItem/ShowcaseItem";
 
 function ProjectsPage() {
   const { t } = useTranslation("common");

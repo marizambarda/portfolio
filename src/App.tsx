@@ -2,15 +2,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 
 //components
-import Menu from "./components/Menu/index.ts";
+import Menu from "./components/Menu/index";
 
 //pages
-import HomePage from "./pages/HomePage/index.ts";
-import AboutPage from "./pages/AboutPage/index.ts";
-import ProjectsPage from "./pages/ProjectsPage/index.ts";
-import ContactPage from "./pages/ContactPage/index.ts";
-import ExperiencePage from "./pages/ExperiencePage/index.ts";
-import MemoryGame from "./components/MemoryGame/MemoryGame.tsx";
+import HomePage from "./pages/HomePage/index";
+import AboutPage from "./pages/AboutPage/index";
+import ProjectsPage from "./pages/ProjectsPage/index";
+import ContactPage from "./pages/ContactPage/index";
+import ExperiencePage from "./pages/ExperiencePage/index";
+import MemoryGame from "./components/MemoryGame/index";
 
 function App() {
   return (
