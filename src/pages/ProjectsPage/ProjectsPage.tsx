@@ -6,7 +6,7 @@ import mundoEscape from "../../images/mundo-escape.png";
 import siteCarro from "../../images/site-carro.png";
 import { useTranslation } from "react-i18next";
 
-import "./ProjectsPage.scss";
+import "./ProjectsPage.modules.scss";
 import ShowcaseItem from "../../components/ShowcaseItem/ShowcaseItem";
 
 function ProjectsPage() {

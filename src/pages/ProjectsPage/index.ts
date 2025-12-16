@@ -1,2 +1,2 @@
-import Page from "./ProjectsPage.tsx";
+import Page from "./ProjectsPage";
 export default Page;

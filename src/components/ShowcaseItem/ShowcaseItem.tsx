@@ -1,6 +1,6 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import "./ShowcaseItem.scss";
+import "./ShowcaseItem.modules.scss";
 
 type ShowcaseItemProps = {
   image?: string;

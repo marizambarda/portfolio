@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
+import "./App.modules.scss";
 
 //components
 import Menu from "./components/Menu/index";
@@ -11,6 +11,7 @@ import ProjectsPage from "./pages/ProjectsPage/index";
 import ContactPage from "./pages/ContactPage/index";
 import ExperiencePage from "./pages/ExperiencePage/index";
 import MemoryGame from "./components/MemoryGame/index";
+import BlogPostsPage from "./pages/BlogPostsPage/BlogPostsPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <ExperiencePage />
         <ProjectsPage />
         <MemoryGame />
+        <BlogPostsPage />
         <ContactPage />
       </div>
     </div>

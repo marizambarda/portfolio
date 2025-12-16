@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useTranslation } from "react-i18next";
-import "./AboutPage.scss";
+import "./AboutPage.modules.scss";
 import { replace } from "../../translations/utils";
 
 function AboutPage() {

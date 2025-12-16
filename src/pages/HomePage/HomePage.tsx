@@ -1,7 +1,7 @@
 import { Button, Container, Row, Col } from "react-bootstrap";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MENU_OFFSET } from "../../constants";
-import "./HomePage.scss";
+import "./HomePage.modules.scss";
 
 import { useTranslation } from "react-i18next";
 

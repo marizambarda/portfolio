@@ -5,7 +5,7 @@ import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { EMAIL_URL, LINKEDIN_URL, GITHUB_URL } from "../../constants";
 import { useTranslation } from "react-i18next";
-import "./ContactPage.scss";
+import "./ContactPage.modules.scss";
 
 function ContactPage() {
   const { t } = useTranslation("common");

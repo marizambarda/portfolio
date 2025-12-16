@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import "./MemoryGame.scss";
+import "./MemoryGame.modules.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
