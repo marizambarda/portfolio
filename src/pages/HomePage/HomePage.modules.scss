@@ -43,8 +43,21 @@
 	&__menu {
 		a {
 			display: block;
+			text-decoration: none;
 		}
 	}
+}
+
+@media (max-width: 575px) {
+	.section-home {
+		&__menu {
+			button {
+			text-decoration: none;
+				width: 100%;
+				text-align: center;
+			}
+	}
+}
 }
 
 @media (min-width: 576px) {
@@ -67,9 +80,6 @@
 			li {
 				display: inline-block;
 			}
-			a {
-				  text-decoration: none;
 			}
-		}
 	}
 }
