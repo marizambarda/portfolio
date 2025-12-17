@@ -12,9 +12,10 @@ const LIST = "space-y-2 pl-5 marker:text-[#c4b5fd]";
 
 export default function BlogPostsPage() {
   return (
-    <Container className="mb-40">
+    <Container className="mb-40 projects-content">
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
+          <h2>Code Tips</h2>
           <Accordion
             defaultActiveKey="0"
             style={{
