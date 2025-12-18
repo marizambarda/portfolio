@@ -116,7 +116,7 @@ function Post() {
       <section>
         <p>Consider this example:</p>
 
-        <div className="flex gap-3">
+        <div className="gap-3 md:flex">
           <CodeImage
             src={img1}
             caption="❌ Timer created in the component body (runs again on re-render)"
@@ -153,7 +153,7 @@ function Post() {
           </p>{" "}
         </div>
         <p>Consider this example:</p>
-        <div className="flex gap-4">
+        <div className="gap-3 md:flex">
           <CodeImage
             src={img2}
             caption="✅ Timer runs once on mount and is cleaned up on unmount"
